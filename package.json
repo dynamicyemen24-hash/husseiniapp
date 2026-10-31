@@ -89,7 +89,7 @@
     "cookie": "^1.0.2",
     "date-fns": "^4.4.0",
     "dotenv": "^17.4.2",
-    "drizzle-orm": "^0.45.2",
+    "drizzle-orm": "^0.45.4",
     "express": "^4.21.2",
     "express-rate-limit": "^8.6.2",
     "framer-motion": "^12.23.22",
