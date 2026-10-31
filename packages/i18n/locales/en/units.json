@@ -1,0 +1,130 @@
+{
+  "overview": {
+    "title": "Units of Measure",
+    "subtitle": "Manage units of measure and conversions"
+  },
+  "general": {
+    "title": "Units of Measure",
+    "list": "Unit List",
+    "create": "Add Unit",
+    "edit": "Edit Unit",
+    "name": "Unit Name",
+    "symbol": "Symbol",
+    "nameEn": "English Name",
+    "symbolEn": "English Symbol",
+    "type": "Type",
+    "types": {
+      "length": "Length",
+      "weight": "Weight",
+      "volume": "Volume",
+      "area": "Area",
+      "time": "Time",
+      "data": "Data",
+      "count": "Count",
+      "custom": "Custom"
+    },
+    "baseUnit": "Base Unit",
+    "conversionFactor": "Conversion Factor",
+    "conversionFactorHelp": "1 base unit = X of this unit",
+    "precision": "Precision",
+    "precisionHelp": "Number of decimal places for display",
+    "isActive": "Active",
+    "isDefault": "Default for Type"
+  },
+  "categories": {
+    "length": {
+      "title": "Length Units",
+      "units": {
+        "meter": "Meter",
+        "kilometer": "Kilometer",
+        "centimeter": "Centimeter",
+        "millimeter": "Millimeter",
+        "inch": "Inch",
+        "foot": "Foot",
+        "yard": "Yard",
+        "mile": "Mile"
+      }
+    },
+    "weight": {
+      "title": "Weight Units",
+      "units": {
+        "kilogram": "Kilogram",
+        "gram": "Gram",
+        "ton": "Ton",
+        "pound": "Pound",
+        "ounce": "Ounce",
+        "stone": "Stone"
+      }
+    },
+    "volume": {
+      "title": "Volume Units",
+      "units": {
+        "liter": "Liter",
+        "milliliter": "Milliliter",
+        "cubicMeter": "Cubic Meter",
+        "gallon": "Gallon",
+        "quart": "Quart",
+        "pint": "Pint",
+        "cup": "Cup",
+        "fluidOunce": "Fluid Ounce"
+      }
+    },
+    "area": {
+      "title": "Area Units",
+      "units": {
+        "squareMeter": "Square Meter",
+        "hectare": "Hectare",
+        "squareKilometer": "Square Kilometer",
+        "acre": "Acre",
+        "squareFoot": "Square Foot",
+        "squareYard": "Square Yard"
+      }
+    },
+    "time": {
+      "title": "Time Units",
+      "units": {
+        "second": "Second",
+        "minute": "Minute",
+        "hour": "Hour",
+        "day": "Day",
+        "week": "Week",
+        "month": "Month",
+        "year": "Year"
+      }
+    },
+    "count": {
+      "title": "Count Units",
+      "units": {
+        "piece": "Piece",
+        "box": "Box",
+        "pack": "Pack",
+        "dozen": "Dozen",
+        "gross": "Gross",
+        "ream": "Ream",
+        "roll": "Roll",
+        "sheet": "Sheet",
+        "meter": "Meter",
+        "kilogram": "Kilogram"
+      }
+    }
+  },
+  "conversions": {
+    "title": "Conversions",
+    "list": "Conversion List",
+    "create": "Add Conversion",
+    "edit": "Edit Conversion",
+    "fromUnit": "From Unit",
+    "toUnit": "To Unit",
+    "factor": "Factor",
+    "formula": "Formula",
+    "isActive": "Active"
+  },
+  "productUnits": {
+    "title": "Product Units",
+    "baseUnit": "Base Unit",
+    "alternateUnits": "Alternate Units",
+    "conversions": "Product Conversions",
+    "defaultSalesUnit": "Default Sales Unit",
+    "defaultPurchaseUnit": "Default Purchase Unit"
+  }
+}

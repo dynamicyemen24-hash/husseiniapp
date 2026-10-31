@@ -1,0 +1,70 @@
+{
+  "overview": {
+    "title": "Dashboard Overview",
+    "welcome": "Welcome, {{name}}",
+    "lastLogin": "Last login: {{date}}",
+    "quickStats": "Quick Statistics"
+  },
+  "widgets": {
+    "totalSales": "Total Sales",
+    "totalPurchases": "Total Purchases",
+    "totalInventory": "Total Inventory",
+    "totalReceivables": "Total Receivables",
+    "totalPayables": "Total Payables",
+    "cashFlow": "Cash Flow",
+    "pendingApprovals": "Pending Approvals",
+    "lowStockItems": "Low Stock Items",
+    "overdueInvoices": "Overdue Invoices",
+    "activeEmployees": "Active Employees",
+    "upcomingLeave": "Upcoming Leave",
+    "openPositions": "Open Positions"
+  },
+  "charts": {
+    "salesTrend": "Sales Trend",
+    "revenueByMonth": "Revenue by Month",
+    "topProducts": "Top Selling Products",
+    "topCustomers": "Top Customers",
+    "inventoryValue": "Inventory Value",
+    "expenseBreakdown": "Expense Breakdown",
+    "cashFlowTrend": "Cash Flow Trend",
+    "profitMargin": "Profit Margin"
+  },
+  "recentActivity": {
+    "title": "Recent Activity",
+    "viewAll": "View All",
+    "noActivity": "No recent activity",
+    "saleCreated": "Sales invoice created",
+    "purchaseCreated": "Purchase order created",
+    "paymentReceived": "Payment received",
+    "paymentMade": "Payment made",
+    "stockAdjusted": "Stock adjusted",
+    "employeeAdded": "Employee added",
+    "approvalRequested": "Approval requested",
+    "approvalCompleted": "Approval completed"
+  },
+  "quickActions": {
+    "title": "Quick Actions",
+    "newSale": "New Sales Invoice",
+    "newPurchase": "New Purchase Order",
+    "newJournalEntry": "New Journal Entry",
+    "newEmployee": "New Employee",
+    "newProduct": "New Product",
+    "recordPayment": "Record Payment",
+    "stockTake": "Stock Take",
+    "runPayroll": "Run Payroll"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark All as Read",
+    "noNotifications": "No notifications",
+    "viewAll": "View All Notifications"
+  },
+  "shortcuts": {
+    "title": "Shortcuts",
+    "keyboardShortcuts": "Keyboard Shortcuts",
+    "newInvoice": "N + I: New Invoice",
+    "newCustomer": "N + C: New Customer",
+    "search": "/: Global Search",
+    "help": "?: Help"
+  }
+}

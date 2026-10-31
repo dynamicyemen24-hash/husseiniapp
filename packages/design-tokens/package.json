@@ -1,0 +1,31 @@
+{
+  "name": "@alhusseiniya/design-tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for AlHusainia platform",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./tokens": "./dist/tokens.json",
+    "./css": "./dist/tokens.css",
+    "./tailwind": "./dist/tailwind-preset.js",
+    "./figma": "./dist/figma.json"
+  },
+  "scripts": {
+    "build": "tsx scripts/build-tokens.ts",
+    "dev": "tsx scripts/build-tokens.ts --watch",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@alhusseiniya/eslint-config": "workspace:*",
+    "style-dictionary": "^3.9.2",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
+}

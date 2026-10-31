@@ -1,0 +1,109 @@
+{
+  "overview": {
+    "title": "الأخطاء",
+    "subtitle": "رسائل الأخطاء والمعالجة"
+  },
+  "general": {
+    "network": "خطأ في الاتصال بالخادم",
+    "serverError": "خطأ في الخادم",
+    "timeout": "انتهت مهلة الطلب",
+    "unknown": "حدث خطأ غير معروف",
+    "unauthorized": "غير مصرح لك بالوصول",
+    "forbidden": "ممنوع الوصول",
+    "notFound": "الصفحة أو المورد غير موجود",
+    "methodNotAllowed": "الطريقة غير مسموحة",
+    "conflict": "تعارض في البيانات",
+    "gone": "المورد غير متاح بعد الآن",
+    "tooManyRequests": "عدد طلبات كبير جداً، يرجى المحاولة لاحقاً",
+    "serviceUnavailable": "الخدمة غير متاحة مؤقتاً",
+    "gatewayTimeout": "انتهت مهلة البوابة"
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "invalidFormat": "تنسيق غير صحيح",
+    "invalidEmail": "بريد إلكتروني غير صحيح",
+    "invalidPhone": "رقم هاتف غير صحيح",
+    "invalidUrl": "رابط غير صحيح",
+    "invalidDate": "تاريخ غير صحيح",
+    "invalidNumber": "رقم غير صحيح",
+    "minLength": "يجب أن يكون {{count}} أحرف على الأقل",
+    "maxLength": "يجب أن لا يتجاوز {{count}} حرف",
+    "min": "يجب أن يكون أكبر من أو يساوي {{min}}",
+    "max": "يجب أن يكون أقل من أو يساوي {{max}}",
+    "pattern": "تنسيق غير صحيح",
+    "unique": "هذه القيمة مستخدمة بالفعل",
+    "passwordMismatch": "كلمات المرور غير متطابقة",
+    "passwordWeak": "كلمة المرور ضعيفة جداً",
+    "futureDate": "يجب أن يكون التاريخ في المستقبل",
+    "pastDate": "يجب أن يكون التاريخ في الماضي",
+    "positiveNumber": "يجب أن يكون رقم موجب",
+    "negativeNumber": "يجب أن يكون رقم سالب",
+    "integer": "يجب أن يكون رقم صحيح",
+    "decimalPlaces": "يجب أن يحتوي على {{count}} منازل عشرية كحد أقصى",
+    "fileTooLarge": "الملف كبير جداً، الحد الأقصى {{size}}",
+    "invalidFileType": "نوع ملف غير مدعوم",
+    "dimensions": "أبعاد الصورة يجب أن تكون {{width}}x{{height}}"
+  },
+  "business": {
+    "duplicateEntry": "هذا السجل موجود بالفعل",
+    "foreignKeyViolation": "لا يمكن الحذف لوجود سجلات مرتبطة",
+    "insufficientStock": "مخزون غير كافٍ",
+    "insufficientBalance": "رصيد غير كافٍ",
+    "creditLimitExceeded": "تجاوز حد الائتمان",
+    "periodClosed": "الفترة المالية مغلقة",
+    "periodLocked": "الفترة المالية مقفلة",
+    "invalidStateTransition": "انتقال حالة غير صالح",
+    "approvalRequired": "تتطلب موافقة",
+    "permissionDenied": "ليس لديك صلاحية لهذا الإجراء",
+    "resourceLocked": "المورد مقفل من قبل مستخدم آخر",
+    "concurrencyConflict": "تم تعديل السجل من قبل مستخدم آخر",
+    "fileInUse": "الملف قيد الاستخدام",
+    "operationNotAllowed": "العملية غير مسموحة في الحالة الحالية"
+  },
+  "database": {
+    "connectionFailed": "فشل الاتصال بقاعدة البيانات",
+    "queryTimeout": "انتهت مهلة الاستعلام",
+    "deadlock": "حدث 교착 في قاعدة البيانات",
+    "constraintViolation": "انتهاك قيد قاعدة البيانات",
+    "duplicateKey": "مفتاح مكرر",
+    "foreignKey": "انتهاك مفتاح خارجي",
+    "checkConstraint": "انتهاك قيد التحقق",
+    "notNull": "الحقل لا يمكن أن يكون فارغاً"
+  },
+  "api": {
+    "invalidRequest": "طلب غير صالح",
+    "missingParameter": "معامل مفقود: {{param}}",
+    "invalidParameter": "معامل غير صالح: {{param}}",
+    "rateLimited": "تم تجاوز حد المعدل",
+    "apiKeyInvalid": "مفتاح API غير صالح",
+    "apiKeyExpired": "انتهت صلاحية مفتاح API",
+    "signatureInvalid": "توقيع غير صالح",
+    "tokenExpired": "انتهت صلاحية الرمز المميز",
+    "tokenInvalid": "رمز مميز غير صالح",
+    "scopeInsufficient": "نطاق غير كافٍ"
+  },
+  "file": {
+    "uploadFailed": "فشل رفع الملف",
+    "downloadFailed": "فشل تنزيل الملف",
+    "deleteFailed": "فشل حذف الملف",
+    "notFound": "الملف غير موجود",
+    "accessDenied": "الوصول مرفوض",
+    "corrupted": "الملف تالف",
+    "virusDetected": "تم اكتشاف فيروس في الملف"
+  },
+  "integration": {
+    "connectionFailed": "فشل الاتصال بالتكامل",
+    "authenticationFailed": "فشل المصادقة",
+    "rateLimited": "تم تجاوز حد التكامل",
+    "invalidResponse": "استجابة غير صالحة من التكامل",
+    "serviceUnavailable": "خدمة التكامل غير متاحة",
+    "configurationError": "خطأ في تكوين التكامل"
+  },
+  "messages": {
+    "tryAgain": "يرجى المحاولة مرة أخرى",
+    "contactSupport": "إذا استمرت المشكلة، يرجى التواصل مع الدعم الفني",
+    "refreshPage": "حاول تحديث الصفحة",
+    "checkConnection": "تحقق من اتصالك بالإنترنت",
+    "checkPermissions": "تحقق من صلاحياتك"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "overview": {
+    "title": "المشتريات",
+    "subtitle": "إدارة أوامر الشراء والفواتير والموردين وطلبات الشراء"
+  },
+  "purchaseOrders": {
+    "title": "أوامر الشراء",
+    "create": "إنشاء أمر شراء",
+    "edit": "تعديل أمر الشراء",
+    "view": "عرض أمر الشراء",
+    "list": "قائمة أوامر الشراء",
+    "number": "رقم الأمر",
+    "date": "التاريخ",
+    "supplier": "المورد",
+    "status": "الحالة",
+    "items": "البنود",
+    "subtotal": "المجموع الفرعي",
+    "discount": "الخصم",
+    "tax": "الضريبة",
+    "total": "الإجمالي",
+    "currency": "العملة",
+    "exchangeRate": "سعر الصرف",
+    "expectedDate": "تاريخ الوصول المتوقع",
+    "deliveryAddress": "عنوان التسليم",
+    "terms": "الشروط والأحكام",
+    "notes": "ملاحظات",
+    "statuses": {
+      "draft": "مسودة",
+      "sent": "مرسل",
+      "confirmed": "مؤكد",
+      "partial": "مستلم جزئياً",
+      "received": "مستلم بالكامل",
+      "cancelled": "ملغي"
+    },
+    "actions": {
+      "send": "إرسال للمورد",
+      "receive": "استلام",
+      "createInvoice": "إنشاء فاتورة",
+      "print": "طباعة",
+      "duplicate": "نسخ",
+      "cancel": "إلغاء"
+    }
+  },
+  "purchaseInvoices": {
+    "title": "فواتير المشتريات",
+    "create": "إنشاء فاتورة مشتريات",
+    "edit": "تعديل الفاتورة",
+    "view": "عرض الفاتورة",
+    "list": "قائمة الفواتير",
+    "number": "رقم الفاتورة",
+    "date": "التاريخ",
+    "supplier": "المورد",
+    "purchaseOrder": "أمر الشراء",
+    "status": "الحالة",
+    "dueDate": "تاريخ الاستحقاق",
+    "items": "البنود",
+    "subtotal": "المجموع الفرعي",
+    "discount": "الخصم",
+    "tax": "الضريبة",
+    "total": "الإجمالي",
+    "paidAmount": "المبلغ المدفوع",
+    "balance": "الرصيد المتبقي",
+    "statuses": {
+      "draft": "مسودة",
+      "pending": "قيد المراجعة",
+      "approved": "معتمدة",
+      "partial": "مدفوعة جزئياً",
+      "paid": "مدفوعة بالكامل",
+      "overdue": "متأخرة",
+      "cancelled": "ملغية"
+    },
+    "actions": {
+      "approve": "اعتماد",
+      "pay": "سداد",
+      "print": "طباعة",
+      "duplicate": "نسخ",
+      "void": "إلغاء"
+    }
+  },
+  "purchaseReturns": {
+    "title": "مرتجعات المشتريات",
+    "create": "إنشاء مرتجع مشتريات",
+    "edit": "تعديل المرتجع",
+    "view": "عرض المرتجع",
+    "list": "قائمة المرتجعات",
+    "originalInvoice": "الفاتورة الأصلية",
+    "reason": "السبب",
+    "items": "البنود المرتجعة",
+    "statuses": {
+      "draft": "مسودة",
+      "pending": "قيد المراجعة",
+      "approved": "معتمدة",
+      "received": "مستلمة",
+      "cancelled": "ملغية"
+    }
+  },
+  "suppliers": {
+    "title": "الموردون",
+    "create": "إضافة مورد",
+    "edit": "تعديل المورد",
+    "view": "عرض المورد",
+    "list": "قائمة الموردين",
+    "name": "اسم المورد",
+    "code": "كود المورد",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "address": "العنوان",
+    "city": "المدينة",
+    "country": "الدولة",
+    "taxNumber": "الرقم الضريبي",
+    "paymentTerms": "شروط الدفع",
+    "creditLimit": "حد الائتمان",
+    "currency": "العملة",
+    "balance": "الرصيد",
+    "totalPurchases": "إجمالي المشتريات",
+    "lastPurchase": "آخر عملية شراء",
+    "status": "الحالة",
+    "rating": "التقييم",
+    "categories": "فئات التوريد"
+  },
+  "requisitions": {
+    "title": "طلبات الشراء",
+    "create": "إنشاء طلب شراء",
+    "edit": "تعديل الطلب",
+    "view": "عرض الطلب",
+    "list": "قائمة الطلبات",
+    "number": "رقم الطلب",
+    "date": "التاريخ",
+    "requester": "طالب الشراء",
+    "department": "القسم",
+    "items": "البنود",
+    "status": "الحالة",
+    "priority": "الأولوية",
+    "priorities": {
+      "low": "منخفضة",
+      "normal": "عادية",
+      "high": "عالية",
+      "urgent": "عاجلة"
+    },
+    "statuses": {
+      "draft": "مسودة",
+      "submitted": "مقدمة",
+      "approved": "معتمدة",
+      "rejected": "مرفوضة",
+      "convertedToPO": "حولت لأمر شراء",
+      "cancelled": "ملغية"
+    },
+    "neededBy": "مطلوبة بحلول"
+  },
+  "analytics": {
+    "title": "تحليلات الموردين",
+    "spendAnalysis": "تحليل الإنفاق",
+    "supplierPerformance": "أداء الموردين",
+    "onTimeDelivery": "التسليم في الموعد",
+    "qualityRating": "تقييم الجودة",
+    "priceVariance": "انحراف الأسعار",
+    "topSuppliers": "أفضل الموردين",
+    "spendByCategory": "الإنفاق حسب الفئة",
+    "spendTrend": "اتجاه الإنفاق"
+  }
+}

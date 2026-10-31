@@ -1,0 +1,109 @@
+{
+  "overview": {
+    "title": "Errors",
+    "subtitle": "Error messages and handling"
+  },
+  "general": {
+    "network": "Network error",
+    "serverError": "Server error",
+    "timeout": "Request timeout",
+    "unknown": "An unknown error occurred",
+    "unauthorized": "Unauthorized access",
+    "forbidden": "Access forbidden",
+    "notFound": "Page or resource not found",
+    "methodNotAllowed": "Method not allowed",
+    "conflict": "Data conflict",
+    "gone": "Resource no longer available",
+    "tooManyRequests": "Too many requests, please try again later",
+    "serviceUnavailable": "Service temporarily unavailable",
+    "gatewayTimeout": "Gateway timeout"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidFormat": "Invalid format",
+    "invalidEmail": "Invalid email address",
+    "invalidPhone": "Invalid phone number",
+    "invalidUrl": "Invalid URL",
+    "invalidDate": "Invalid date",
+    "invalidNumber": "Invalid number",
+    "minLength": "Must be at least {{count}} characters",
+    "maxLength": "Must not exceed {{count}} characters",
+    "min": "Must be greater than or equal to {{min}}",
+    "max": "Must be less than or equal to {{max}}",
+    "pattern": "Invalid format",
+    "unique": "This value is already in use",
+    "passwordMismatch": "Passwords do not match",
+    "passwordWeak": "Password is too weak",
+    "futureDate": "Date must be in the future",
+    "pastDate": "Date must be in the past",
+    "positiveNumber": "Must be a positive number",
+    "negativeNumber": "Must be a negative number",
+    "integer": "Must be an integer",
+    "decimalPlaces": "Must have at most {{count}} decimal places",
+    "fileTooLarge": "File too large, maximum {{size}}",
+    "invalidFileType": "Unsupported file type",
+    "dimensions": "Image dimensions must be {{width}}x{{height}}"
+  },
+  "business": {
+    "duplicateEntry": "Record already exists",
+    "foreignKeyViolation": "Cannot delete - related records exist",
+    "insufficientStock": "Insufficient stock",
+    "insufficientBalance": "Insufficient balance",
+    "creditLimitExceeded": "Credit limit exceeded",
+    "periodClosed": "Fiscal period is closed",
+    "periodLocked": "Fiscal period is locked",
+    "invalidStateTransition": "Invalid state transition",
+    "approvalRequired": "Approval required",
+    "permissionDenied": "You don't have permission for this action",
+    "resourceLocked": "Resource is locked by another user",
+    "concurrencyConflict": "Record was modified by another user",
+    "fileInUse": "File is in use",
+    "operationNotAllowed": "Operation not allowed in current state"
+  },
+  "database": {
+    "connectionFailed": "Database connection failed",
+    "queryTimeout": "Query timeout",
+    "deadlock": "Database deadlock",
+    "constraintViolation": "Database constraint violation",
+    "duplicateKey": "Duplicate key",
+    "foreignKey": "Foreign key violation",
+    "checkConstraint": "Check constraint violation",
+    "notNull": "Field cannot be null"
+  },
+  "api": {
+    "invalidRequest": "Invalid request",
+    "missingParameter": "Missing parameter: {{param}}",
+    "invalidParameter": "Invalid parameter: {{param}}",
+    "rateLimited": "Rate limit exceeded",
+    "apiKeyInvalid": "Invalid API key",
+    "apiKeyExpired": "API key expired",
+    "signatureInvalid": "Invalid signature",
+    "tokenExpired": "Token expired",
+    "tokenInvalid": "Invalid token",
+    "scopeInsufficient": "Insufficient scope"
+  },
+  "file": {
+    "uploadFailed": "File upload failed",
+    "downloadFailed": "File download failed",
+    "deleteFailed": "File deletion failed",
+    "notFound": "File not found",
+    "accessDenied": "Access denied",
+    "corrupted": "File corrupted",
+    "virusDetected": "Virus detected in file"
+  },
+  "integration": {
+    "connectionFailed": "Integration connection failed",
+    "authenticationFailed": "Authentication failed",
+    "rateLimited": "Integration rate limit exceeded",
+    "invalidResponse": "Invalid response from integration",
+    "serviceUnavailable": "Integration service unavailable",
+    "configurationError": "Integration configuration error"
+  },
+  "messages": {
+    "tryAgain": "Please try again",
+    "contactSupport": "If the problem persists, contact support",
+    "refreshPage": "Try refreshing the page",
+    "checkConnection": "Check your internet connection",
+    "checkPermissions": "Check your permissions"
+  }
+}

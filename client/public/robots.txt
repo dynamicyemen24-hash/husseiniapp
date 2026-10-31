@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+# Protected operational routes - never index internal business data
+Disallow: /app/
+Disallow: /accounting/
+Disallow: /reports/
+Disallow: /settings/
+Disallow: /commercial/
+Disallow: /inventory/
+Disallow: /pos/
+Disallow: /projects/
+Disallow: /hr/
+Disallow: /procurement/
+Disallow: /procurement-workspace/
+Disallow: /supplier-analytics/
+Disallow: /journal/
+Disallow: /manual-journal/
+Disallow: /customization/
+Disallow: /branches/
+Disallow: /audit/
+Disallow: /requisitions/
+Disallow: /operations/
+Disallow: /analytics/
+Disallow: /billing/
+Disallow: /permissions/
+Disallow: /basic-data/
+
+Sitemap: https://alhusainiaye.vercel.app/sitemap.xml

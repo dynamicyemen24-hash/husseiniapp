@@ -1,0 +1,36 @@
+{
+  "name": "@alhusseiniya/finops",
+  "version": "1.0.0",
+  "description": "FinOps cost monitoring for AlHusainia platform",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "dev": "tsx scripts/build.ts --watch",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@alhusseiniya/eslint-config": "workspace:*",
+    "typescript": "^5.9.0",
+    "vitest": "^2.1.0",
+    "tsx": "^4.19.0"
+  },
+  "dependencies": {
+    "zod": "^4.6.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
+}

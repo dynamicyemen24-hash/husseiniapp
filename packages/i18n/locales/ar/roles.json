@@ -1,0 +1,69 @@
+{
+  "overview": {
+    "title": "الأدوار",
+    "subtitle": "إدارة الأدوار والصلاحيات"
+  },
+  "general": {
+    "title": "الأدوار",
+    "list": "قائمة الأدوار",
+    "create": "إضافة دور",
+    "edit": "تعديل الدور",
+    "view": "عرض الدور",
+    "delete": "حذف الدور",
+    "duplicate": "نسخ الدور",
+    "name": "اسم الدور",
+    "code": "كود الدور",
+    "description": "الوصف",
+    "permissions": "الصلاحيات",
+    "isSystem": "دور نظامي",
+    "isActive": "نشط",
+    "userCount": "عدد المستخدمين",
+    "createdAt": "تاريخ الإنشاء",
+    "updatedAt": "تاريخ التحديث"
+  },
+  "systemRoles": {
+    "superAdmin": "مدير النظام (سوبر أدمن)",
+    "admin": "مدير",
+    "manager": "مدير قسم",
+    "accountant": "محاسب",
+    "salesManager": "مدير مبيعات",
+    "salesRep": "مندوب مبيعات",
+    "inventoryManager": "مدير مخزون",
+    "storekeeper": "أمين مخزن",
+    "hrManager": "مدير موارد بشرية",
+    "hrOfficer": "أخصائي موارد بشرية",
+    "procurementManager": "مدير مشتريات",
+    "procurementOfficer": "أخصائي مشتريات",
+    "cashier": "كاشير",
+    "viewer": "مشاهد",
+    "auditor": "مدقق"
+  },
+  "permissions": {
+    "title": "صلاحيات الدور",
+    "modules": "الوحدات",
+    "actions": "الإجراءات",
+    "grantAll": "منح الكل",
+    "revokeAll": "سحب الكل",
+    "expandAll": "توسيع الكل",
+    "collapseAll": "طي الكل",
+    "search": "بحث في الصلاحيات"
+  },
+  "assignment": {
+    "title": "تعيين الأدوار",
+    "assignRole": "تعيين دور",
+    "removeRole": "إزالة دور",
+    "user": "المستخدم",
+    "roles": "الأدوار",
+    "effectiveFrom": "ساري من",
+    "effectiveTo": "ساري حتى",
+    "assignedBy": "عين بواسطة",
+    "assignedAt": "تاريخ التعيين"
+  },
+  "hierarchy": {
+    "title": "تسلسل الأدوار",
+    "parentRole": "الدور الأب",
+    "childRoles": "الأدوار الفرعية",
+    "inheritsFrom": "يرث من",
+    "inheritsPermissions": "يرث الصلاحيات"
+  }
+}

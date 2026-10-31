@@ -1,0 +1,98 @@
+{
+  "overview": {
+    "title": "Currencies",
+    "subtitle": "Currency formats and exchange rates"
+  },
+  "general": {
+    "title": "Currencies",
+    "baseCurrency": "Base Currency",
+    "baseCurrencyHelp": "System base currency (cannot be changed after transactions exist)",
+    "currencies": "Currencies",
+    "addCurrency": "Add Currency",
+    "editCurrency": "Edit Currency",
+    "code": "Currency Code",
+    "name": "Currency Name",
+    "symbol": "Symbol",
+    "symbolPosition": "Symbol Position",
+    "symbolPositions": {
+      "before": "Before Amount",
+      "after": "After Amount"
+    },
+    "decimalPlaces": "Decimal Places",
+    "decimalPlacesHelp": "Number of decimal places (0-4)",
+    "thousandsSeparator": "Thousands Separator",
+    "decimalSeparator": "Decimal Separator",
+    "isActive": "Active",
+    "isBase": "Base Currency",
+    "exchangeRate": "Exchange Rate",
+    "exchangeRateHelp": "1 base currency unit = X units of this currency",
+    "lastUpdated": "Last Updated",
+    "autoUpdate": "Auto Update",
+    "provider": "Exchange Rate Provider",
+    "providers": {
+      "manual": "Manual",
+      "exchangerate": "ExchangeRate-API",
+      "fixer": "Fixer.io",
+      "currencylayer": "CurrencyLayer",
+      "openexchangerates": "OpenExchangeRates"
+    }
+  },
+  "exchangeRates": {
+    "title": "Exchange Rates",
+    "list": "Exchange Rate List",
+    "date": "Date",
+    "fromCurrency": "From Currency",
+    "toCurrency": "To Currency",
+    "rate": "Rate",
+    "inverseRate": "Inverse Rate",
+    "source": "Source",
+    "isCurrent": "Current",
+    "updateRates": "Update Rates",
+    "history": "Rate History",
+    "importRates": "Import Rates",
+    "exportRates": "Export Rates"
+  },
+  "formatting": {
+    "title": "Currency Formatting",
+    "pattern": "Format Pattern",
+    "patterns": {
+      "standard": "Standard (1,234.56)",
+      "accounting": "Accounting ((1,234.56))",
+      "compact": "Compact (1.23K)",
+      "iso": "ISO (SAR 1,234.56)"
+    },
+    "showSymbol": "Show Symbol",
+    "showCode": "Show Code",
+    "spaceBetween": "Space Between Symbol and Amount",
+    "negativeFormat": "Negative Format",
+    "negativeFormats": {
+      "minus": "-1,234.56",
+      "parentheses": "(1,234.56)",
+      "minusSymbol": "- SAR 1,234.56"
+    }
+  },
+  "conversion": {
+    "title": "Currency Conversion",
+    "convert": "Convert",
+    "amount": "Amount",
+    "from": "From",
+    "to": "To",
+    "result": "Result",
+    "rate": "Rate Used",
+    "date": "Rate Date",
+    "fee": "Conversion Fee",
+    "netAmount": "Net Amount"
+  },
+  "multiCurrency": {
+    "title": "Multi-Currency",
+    "enabled": "Enable Multi-Currency",
+    "enabledHelp": "Allow transactions in multiple currencies",
+    "gainLossAccount": "Exchange Gain/Loss Account",
+    "realizedGain": "Realized Gain",
+    "realizedLoss": "Realized Loss",
+    "unrealizedGain": "Unrealized Gain",
+    "unrealizedLoss": "Unrealized Loss",
+    "revaluation": "Revaluation",
+    "revaluationDate": "Revaluation Date"
+  }
+}

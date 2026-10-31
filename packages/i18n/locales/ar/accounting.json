@@ -1,0 +1,187 @@
+{
+  "overview": {
+    "title": "المحاسبة",
+    "subtitle": "إدارة الحسابات والقيود والفترات المالية والقوائم المالية"
+  },
+  "chartOfAccounts": {
+    "title": "دليل الحسابات",
+    "create": "إضافة حساب",
+    "edit": "تعديل الحساب",
+    "list": "قائمة الحسابات",
+    "code": "كود الحساب",
+    "name": "اسم الحساب",
+    "nameEn": "الاسم بالإنجليزية",
+    "type": "نوع الحساب",
+    "parent": "الحساب الأب",
+    "currency": "العملة",
+    "isActive": "نشط",
+    "allowPosting": "يسمح بالترحيل",
+    "balance": "الرصيد",
+    "openingBalance": "الرصيد الافتتاحي",
+    "types": {
+      "asset": "أصول",
+      "liability": "خصوم",
+      "equity": "حقوق ملكية",
+      "revenue": "إيرادات",
+      "expense": "مصروفات",
+      "costOfSales": "تكلفة المبيعات"
+    },
+    "nature": {
+      "debit": "مدين",
+      "credit": "دائن"
+    }
+  },
+  "journalEntries": {
+    "title": "القيود المحاسبية",
+    "create": "إنشاء قيد",
+    "edit": "تعديل القيد",
+    "view": "عرض القيد",
+    "list": "قائمة القيود",
+    "number": "رقم القيد",
+    "date": "التاريخ",
+    "reference": "المرجع",
+    "narration": "البيان",
+    "lines": "البنود",
+    "account": "الحساب",
+    "debit": "مدين",
+    "credit": "دائن",
+    "totalDebit": "إجمالي المدين",
+    "totalCredit": "إجمالي الدائن",
+    "difference": "الفرق",
+    "isBalanced": "متوازن",
+    "status": "الحالة",
+    "statuses": {
+      "draft": "مسودة",
+      "posted": "مرحلة",
+      "reversed": "معكوسة",
+      "void": "ملغية"
+    },
+    "actions": {
+      "post": "ترحيل",
+      "reverse": "عكس القيد",
+      "void": "إلغاء",
+      "print": "طباعة",
+      "duplicate": "نسخ"
+    }
+  },
+  "manualJournal": {
+    "title": "قيد يدوي",
+    "create": "إنشاء قيد يدوي",
+    "template": "قالب القيد",
+    "saveAsTemplate": "حفظ كقالب"
+  },
+  "fiscalPeriods": {
+    "title": "الفترات المالية",
+    "create": "إضافة فترة مالية",
+    "edit": "تعديل الفترة",
+    "list": "قائمة الفترات",
+    "name": "اسم الفترة",
+    "code": "كود الفترة",
+    "startDate": "تاريخ البداية",
+    "endDate": "تاريخ النهاية",
+    "status": "الحالة",
+    "statuses": {
+      "open": "مفتوحة",
+      "closed": "مغلقة",
+      "locked": "مقفلة"
+    },
+    "yearEnd": "إقفال نهاية السنة",
+    "carryForward": "ترحيل الأرصدة"
+  },
+  "financialStatements": {
+    "title": "القوائم المالية",
+    "trialBalance": "ميزان المراجعة",
+    "balanceSheet": "الميزانية العمومية",
+    "incomeStatement": "قائمة الدخل",
+    "cashFlow": "قائمة التدفقات النقدية",
+    "equityChanges": "قائمة التغيرات في حقوق الملكية",
+    "notes": "الإيضاحات",
+    "asOfDate": "كما في تاريخ",
+    "fromDate": "من تاريخ",
+    "toDate": "إلى تاريخ",
+    "comparative": "مقارن",
+    "currency": "العملة"
+  },
+  "costCenters": {
+    "title": "مراكز التكلفة",
+    "create": "إضافة مركز تكلفة",
+    "edit": "تعديل مركز التكلفة",
+    "list": "قائمة مراكز التكلفة",
+    "code": "كود المركز",
+    "name": "اسم المركز",
+    "parent": "المركز الأب",
+    "isActive": "نشط",
+    "budget": "الميزانية",
+    "actual": "الفعلي",
+    "variance": "الانحراف"
+  },
+  "tax": {
+    "title": "إدارة الضرائب",
+    "create": "إضافة ضريبة",
+    "edit": "تعديل الضريبة",
+    "list": "قائمة الضرائب",
+    "name": "اسم الضريبة",
+    "code": "كود الضريبة",
+    "rate": "النسبة",
+    "type": "النوع",
+    "types": {
+      "vat": "ضريبة القيمة المضافة",
+      "sales": "ضريبة المبيعات",
+      "withholding": "ضريبة الاستقطاع",
+      "customs": "رسوم جمركية"
+    },
+    "isActive": "نشط",
+    "accounts": {
+      "output": "حساب ضريبة المخرجات",
+      "input": "حساب ضريبة المدخلات"
+    }
+  },
+  "zatca": {
+    "title": "التكامل مع زاتكا",
+    "csid": "CSID",
+    "complianceCheck": "فحص الامتثال",
+    "invoiceReporting": "إبلاغ الفواتير",
+    "status": "الحالة",
+    "statuses": {
+      "compliant": "ممتثل",
+      "nonCompliant": "غير ممتثل",
+      "pending": "قيد المراجعة"
+    }
+  },
+  "payments": {
+    "title": "المدفوعات",
+    "receive": "استلام دفعة",
+    "pay": "سداد دفعة",
+    "list": "قائمة المدفوعات",
+    "date": "التاريخ",
+    "party": "الطرف",
+    "amount": "المبلغ",
+    "method": "طريقة الدفع",
+    "methods": {
+      "cash": "نقدي",
+      "bankTransfer": "تحويل بنكي",
+      "check": "شيك",
+      "card": "بطاقة",
+      "wallet": "محفظة إلكترونية"
+    },
+    "reference": "المرجع",
+    "bankAccount": "الحساب البنكي",
+    "status": "الحالة",
+    "statuses": {
+      "pending": "معلقة",
+      "cleared": "مصفاة",
+      "bounced": "مرفوضة",
+      "cancelled": "ملغية"
+    }
+  },
+  "reports": {
+    "title": "تقارير المحاسبة",
+    "generalLedger": "دفتر الأستاذ العام",
+    "subLedger": "دفتر الأستاذ الفرعي",
+    "accountStatement": "كشف حساب",
+    "agingReceivables": "تقادم الذمم المدينة",
+    "agingPayables": "تقادم الذمم الدائنة",
+    "taxReport": "تقرير الضرائب",
+    "cashFlowReport": "تقرير التدفق النقدي"
+  }
+}

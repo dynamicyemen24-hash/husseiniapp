@@ -1,0 +1,138 @@
+{
+  "overview": {
+    "title": "التقارير",
+    "subtitle": "التقارير والتحليلات ولوحات المعلومات"
+  },
+  "general": {
+    "title": "التقارير",
+    "list": "قائمة التقارير",
+    "create": "إنشاء تقرير",
+    "edit": "تعديل التقرير",
+    "view": "عرض التقرير",
+    "run": "تشغيل التقرير",
+    "schedule": "جدولة التقرير",
+    "export": "تصدير التقرير",
+    "print": "طباعة التقرير",
+    "share": "مشاركة التقرير",
+    "favorite": "إضافة للمفضلة",
+    "duplicate": "نسخ التقرير",
+    "delete": "حذف التقرير"
+  },
+  "types": {
+    "title": "أنواع التقارير",
+    "standard": "تقارير قياسية",
+    "custom": "تقارير مخصصة",
+    "scheduled": "تقارير مجدولة",
+    "adHoc": "تقارير آنية",
+    "dashboards": "لوحات المعلومات"
+  },
+  "categories": {
+    "sales": "تقارير المبيعات",
+    "inventory": "تقارير المخزون",
+    "accounting": "تقارير المحاسبة",
+    "hr": "تقارير الموارد البشرية",
+    "procurement": "تقارير المشتريات",
+    "financial": "تقارير مالية",
+    "operational": "تقارير تشغيلية",
+    "executive": "تقارير تنفيذية"
+  },
+  "parameters": {
+    "title": "معاملات التقرير",
+    "dateRange": "نطاق التاريخ",
+    "fromDate": "من تاريخ",
+    "toDate": "إلى تاريخ",
+    "branch": "الفرع",
+    "department": "القسم",
+    "employee": "الموظف",
+    "customer": "العميل",
+    "supplier": "المورد",
+    "product": "المنتج",
+    "category": "التصنيف",
+    "warehouse": "المستودع",
+    "currency": "العملة",
+    "groupBy": "تجميع حسب",
+    "sortBy": "ترتيب حسب",
+    "filters": "مرشحات",
+    "advancedFilters": "مرشحات متقدمة"
+  },
+  "output": {
+    "format": "تنسيق الإخراج",
+    "formats": {
+      "pdf": "PDF",
+      "excel": "Excel",
+      "csv": "CSV",
+      "html": "HTML",
+      "json": "JSON"
+    },
+    "orientation": "الاتجاه",
+    "orientations": {
+      "portrait": "عمودي",
+      "landscape": "أفقي"
+    },
+    "pageSize": "حجم الصفحة",
+    "pageSizes": {
+      "a4": "A4",
+      "a3": "A3",
+      "letter": "Letter",
+      "legal": "Legal"
+    },
+    "includeHeader": "تضمين رأس الصفحة",
+    "includeFooter": "تضمين تذييل الصفحة",
+    "pageNumbers": "أرقام الصفحات"
+  },
+  "scheduling": {
+    "title": "جدولة التقارير",
+    "frequency": "التكرار",
+    "frequencies": {
+      "daily": "يومي",
+      "weekly": "أسبوعي",
+      "monthly": "شهري",
+      "quarterly": "ربع سنوي",
+      "yearly": "سنوي",
+      "custom": "مخصص"
+    },
+    "time": "وقت التشغيل",
+    "timezone": "المنطقة الزمنية",
+    "recipients": "المستلمون",
+    "subject": "موضوع البريد",
+    "message": "الرسالة",
+    "attachFormat": "تنسيق المرفق",
+    "isActive": "نشط",
+    "nextRun": "التشغيل القادم",
+    "lastRun": "آخر تشغيل",
+    "runHistory": "سجل التشغيل"
+  },
+  "visualization": {
+    "title": "التصور البياني",
+    "chartType": "نوع المخطط",
+    "chartTypes": {
+      "bar": "أعمدة",
+      "line": "خط",
+      "pie": "دائري",
+      "donut": "حلقي",
+      "area": "منطقة",
+      "scatter": "مبعثر",
+      "heatmap": "خريطة حرارية",
+      "gauge": "مقياس",
+      "funnel": "قمع",
+      "waterfall": "شلال"
+    },
+    "xAxis": "محور X",
+    "yAxis": "محور Y",
+    "series": "السلاسل",
+    "legend": "المفتاح",
+    "tooltip": "تلميح",
+    "dataLabels": "تسميات البيانات",
+    "gridLines": "خطوط الشبكة"
+  },
+  "permissions": {
+    "view": "عرض التقارير",
+    "create": "إنشاء تقارير",
+    "edit": "تعديل التقارير",
+    "delete": "حذف التقارير",
+    "run": "تشغيل التقارير",
+    "schedule": "جدولة التقارير",
+    "export": "تصدير التقارير",
+    "admin": "إدارة التقارير"
+  }
+}

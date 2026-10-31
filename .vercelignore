@@ -1,0 +1,15 @@
+﻿node_modules
+.git
+.vscode
+.manus-logs
+coverage
+dist
+test-results
+e2e
+apps/website
+apps/system
+packages/*/node_modules
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx

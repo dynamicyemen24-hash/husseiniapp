@@ -1,0 +1,16 @@
+{
+  "name": "@alhusseiniya/oncall-escalation",
+  "version": "1.0.0",
+  "description": "Automated on-call and escalation management",
+  "type": "module",
+  "main": "oncall-escalation.ts",
+  "scripts": {
+    "start": "tsx oncall-escalation.ts",
+    "demo": "tsx oncall-escalation.ts",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.0",
+    "tsx": "^4.19.0"
+  }
+}

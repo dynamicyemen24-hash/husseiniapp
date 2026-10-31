@@ -1,0 +1,374 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <!--
+      Apply the saved language direction BEFORE first paint so returning
+      English visitors never see an RTL flash. Mirrors resolveInitialLanguage()
+      in client/src/lib/i18n.ts — keep them in sync.
+    -->
+    <script>
+      try {
+        var i18nLang = localStorage.getItem("i18n_lang");
+        if (i18nLang === "en") {
+          document.documentElement.lang = "en";
+          document.documentElement.dir = "ltr";
+        }
+      } catch (e) {}
+    </script>
+    <meta name="author" content="الحسينية لخدمات الأعمال" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="revisit-after" content="3 days" />
+    <meta name="language" content="Arabic" />
+    <meta name="geo.region" content="YE" />
+    <meta name="geo.placename" content="Yemen" />
+    <meta name="copyright" content="© 2018-2026 الحسينية لخدمات الأعمال" />
+
+    <title>مؤسسة الحسينية لخدمات الأعمال — حلول أعمال متكاملة</title>
+    <meta
+      name="description"
+      content="مؤسسة الحسينية لخدمات الأعمال — شركة تقدم حلول أعمال متكاملة: استشارات مؤسسية، هندسية، وخدمات معرفية. ومن منتجاتها منصة Uamex ERP لإدارة المحاسبة والتجارة والمخزون."
+    />
+    <meta
+      name="keywords"
+      content="نظام ERP, محاسبة, استشارات مؤسسية, IFRS, COSO, PMBOK, ISO 27001, Uamex_erp, الحسينية, مؤسسة الحسينية, مكتبة الحسينية, استشارات هندسية, رفع مساحي, جدول كميات BOQ, BOQ, NRM, POMI, GPS surveying, BIM, خدمات طلابية, SPSS, APA 7th, تحليل إحصائي, صيانة كمبيوتر, نظام محاسبي سحابي, يعمل بدون إنترنت, عزل المستأجرين, AES-256, سجل تدقيق, تكاملات بنكية, فوترة إلكترونية, ETA, Yemen ERP, Arabic ERP, multi-tenant, double-entry"
+    />
+    <meta name="theme-color" content="#102a2b" />
+    <meta name="msapplication-TileColor" content="#102a2b" />
+    <meta name="application-name" content="Uamex_erp" />
+    <meta name="apple-mobile-web-app-title" content="Uamex_erp" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Mobile touch optimizations -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover"
+    />
+    <meta name="touch-action" content="manipulation" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Prevent tap highlights on mobile -->
+    <style>
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        touch-action: manipulation;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+    <!-- Performance: preload assistant identity (high priority, first paint) + self-hosted WOFF2 fonts -->
+    <link
+      rel="preload"
+      as="image"
+      href="/elias-avatar-sm.jpg"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="/fonts/tajawal-arabic-700-normal.woff2"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="/fonts/tajawal-arabic-500-normal.woff2"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="/fonts/tajawal-arabic-900-normal.woff2"
+      fetchpriority="high"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="الحسينية" />
+
+    <!-- OpenGraph & Social Sharing Meta Tags — World-class -->
+    <meta
+      property="og:title"
+      content="Uamex_erp — منصة الحوكمة المؤسسية الموحدة | الحسينية"
+    />
+    <meta
+      property="og:description"
+      content="محاسبة IFRS بقيد مزدوج، ضوابط COSO، إدارة مشاريع PMBOK، ذكاء أعمال لحظي — في منصة واحدة. يعمل أوفلاين. 14 يوم تجربة مجانية بدون بطاقة."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alhusainiaye.vercel.app/" />
+    <meta
+      property="og:site_name"
+      content="Uamex_erp — الحسينية لخدمات الأعمال"
+    />
+    <meta property="og:locale" content="ar" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://alhusainiaye.vercel.app/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="الحسينية لخدمات الأعمال — منصة Uamex_erp الموحدة"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@husseiniya_ye" />
+    <meta name="twitter:creator" content="@husseiniya_ye" />
+    <meta
+      name="twitter:title"
+      content="Uamex_erp — منصة الحوكمة المؤسسية الموحدة"
+    />
+    <meta
+      name="twitter:description"
+      content="محاسبة IFRS، ضوابط COSO، إدارة مشاريع PMBOK — كل شيء في نظام واحد. يعمل بدون إنترنت. 14 يوم تجربة مجانية."
+    />
+    <meta
+      name="twitter:image"
+      content="https://alhusainiaye.vercel.app/og-image.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Uamex_erp — لوحة القيادة التنفيذية"
+    />
+
+    <!-- LinkedIn & Pinterest -->
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="pinterest-rich-pin" content="true" />
+
+    <!-- Canonical + Alternate hreflang -->
+    <link rel="canonical" href="https://alhusainiaye.vercel.app/" />
+    <link
+      rel="alternate"
+      hreflang="ar"
+      href="https://alhusainiaye.vercel.app/"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://alhusainiaye.vercel.app/?lang=en"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://alhusainiaye.vercel.app/"
+    />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- Favicon & PWA icons — هوية المؤسسة (ALHUSAINIA) — مصدرها public/favicon.ico v2.11.0 -->
+    <link rel="icon" href="/favicon.ico?v=2.11.0" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v=2.11.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png?v=2.11.0"
+    />
+    <!-- Uamex_erp branded favicon — the accounting platform work surface -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/uamex-favicon-32.png?v=2.11.0"
+      id="uamex-favicon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icon-192.png?v=2.11.0"
+    />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2.11.0" />
+    <!-- Fonts are self-hosted (WOFF2) — @font-face declared in client/src/index.css. No external stylesheet needed. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "مؤسسة الحسينية لخدمات الأعمال",
+        "alternateName": "alhusainiaye",
+        "url": "https://alhusainiaye.vercel.app",
+        "logo": "https://alhusainiaye.vercel.app/favicon.ico",
+        "description": "منصة الحسينية الموحدة — نظام الحسابات المتقدم، الاستشارات الهندسية والتقنية والمؤسسية، خدمات المقاولين والأراضي، المتجر الإلكتروني، الخدمات الطلابية، التصاميم، وصيانة الأجهزة.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "شارع المدينة الرياضية",
+          "addressLocality": "ذمار",
+          "addressCountry": "YE"
+        },
+        "sameAs": [],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "availableLanguage": ["Arabic"],
+          "telephone": "+967 778 343 988",
+          "email": "hello@husseiniya-business.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "النظام المحاسبي المتقدم",
+        "description": "قيد مزدوج، دليل حسابات شجري، ميزان مراجعة، وقوائم مالية وإقفال سنوي تلقائي",
+        "provider": {
+          "@type": "Organization",
+          "name": "مؤسسة الحسينية لخدمات الأعمال"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "الاستشارات الهندسية والمقاولات",
+        "description": "مخططات تنفيذية، رفع مساحي، جداول BOQ، وحساب الحفر والردم للمقاولين والأراضي",
+        "provider": {
+          "@type": "Organization",
+          "name": "مؤسسة الحسينية لخدمات الأعمال"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "المبيعات والمخازن والعملاء",
+        "description": "فواتير، سندات، حركة مخزون، وربط طلبات المتجر بكتالوج المنتجات آلياً",
+        "provider": {
+          "@type": "Organization",
+          "name": "مؤسسة الحسينية لخدمات الأعمال"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "مكتبة الحسينية وصيانة الأجهزة",
+        "description": "خدمات طلابية، تصاميم، أبحاث، وتصليح الموبايل والكمبيوتر تحت سقف واحد",
+        "provider": {
+          "@type": "Organization",
+          "name": "مؤسسة الحسينية لخدمات الأعمال"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root">
+      <div
+        class="alhusainia-splash"
+        role="status"
+        aria-live="polite"
+        aria-label="جاري التحميل"
+      >
+        <div class="alhusainia-splash-card">
+          <div class="alhusainia-progress-ring" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false">
+              <circle
+                class="alhusainia-progress-track"
+                cx="32"
+                cy="32"
+                r="25"
+              />
+              <circle
+                class="alhusainia-progress-value"
+                cx="32"
+                cy="32"
+                r="25"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <style>
+        .alhusainia-splash {
+          position: fixed;
+          inset: 0;
+          background: #0b1d1e;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family:
+            "Tajawal",
+            system-ui,
+            -apple-system,
+            sans-serif;
+          color: #f0ebe3;
+          z-index: 9999;
+          overflow: hidden;
+        }
+        .alhusainia-splash-card {
+          display: grid;
+          place-items: center;
+          width: 56px;
+          height: 56px;
+        }
+        .alhusainia-progress-ring {
+          position: relative;
+          width: 52px;
+          height: 52px;
+        }
+        .alhusainia-progress-ring svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+          transform: rotate(-90deg);
+        }
+        .alhusainia-progress-track,
+        .alhusainia-progress-value {
+          fill: none;
+          stroke-width: 4;
+        }
+        .alhusainia-progress-track {
+          stroke: rgba(255, 255, 255, 0.12);
+        }
+        .alhusainia-progress-value {
+          stroke: #d4a574;
+          stroke-linecap: round;
+          stroke-dasharray: 42 158;
+          transform-origin: 32px 32px;
+          animation: alhusainia-ring 1.25s ease-in-out infinite;
+        }
+        @keyframes alhusainia-ring {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .alhusainia-progress-value {
+            animation: none;
+            stroke-dasharray: 18 182;
+          }
+        }
+      </style>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

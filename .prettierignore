@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+*.dist
+api/
+
+# Generated files
+*.tsbuildinfo
+coverage/
+
+# Package files
+package-lock.json
+pnpm-lock.yaml
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# Environment files
+.env*
+!.env.example
+
+# Agent stubs in scripts/agents use TypeScript class syntax inside .mjs
+# files and are intentionally not part of the build (same baseline as
+# eslint.config.js). Prettier cannot parse them; they are executed via
+# `node` by scripts/agents/orchestrator.mjs, so they must keep .mjs names.
+scripts/agents/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

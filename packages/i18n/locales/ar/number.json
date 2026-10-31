@@ -1,0 +1,109 @@
+{
+  "overview": {
+    "title": "الأرقام والتنسيق",
+    "subtitle": "تنسيقات الأرقام والرموز والوحدات"
+  },
+  "formats": {
+    "decimal": "،",
+    "group": "،",
+    "percent": "٪",
+    "minus": "−",
+    "plus": "؎",
+    "infinity": "∞",
+    "nan": "ليس رقماً"
+  },
+  "numberingSystems": {
+    "arabic": "الأرقام العربية الهندية (٠-٩)",
+    "western": "الأرقام العربية الغربية (0-9)",
+    "persian": "الأرقام الفارسية (۰-۹)"
+  },
+  "patterns": {
+    "decimal": "#,##0.###",
+    "currency": "#,##0.00 ¤",
+    "percent": "#,##0%",
+    "scientific": "#E0",
+    "compact": {
+      "short": {
+        "1000": "ك",
+        "1000000": "م",
+        "1000000000": "ب"
+      },
+      "long": {
+        "1000": "ألف",
+        "1000000": "مليون",
+        "1000000000": "مليار"
+      }
+    }
+  },
+  "units": {
+    "length": {
+      "meter": "متر",
+      "kilometer": "كيلومتر",
+      "centimeter": "سنتيمتر",
+      "millimeter": "مليمتر",
+      "inch": "بوصة",
+      "foot": "قدم",
+      "yard": "يارد"
+    },
+    "weight": {
+      "kilogram": "كيلوغرام",
+      "gram": "غرام",
+      "ton": "طن",
+      "pound": "رطل",
+      "ounce": "أونصة"
+    },
+    "volume": {
+      "liter": "لتر",
+      "milliliter": "مليلتر",
+      "cubicMeter": "متر مكعب",
+      "gallon": "غالون"
+    },
+    "area": {
+      "squareMeter": "متر مربع",
+      "hectare": "هكتار",
+      "squareKilometer": "كيلومتر مربع",
+      "acre": "فدان"
+    },
+    "time": {
+      "second": "ثانية",
+      "minute": "دقيقة",
+      "hour": "ساعة",
+      "day": "يوم",
+      "week": "أسبوع",
+      "month": "شهر",
+      "year": "سنة"
+    },
+    "data": {
+      "byte": "بايت",
+      "kilobyte": "كيلوبايت",
+      "megabyte": "ميجابايت",
+      "gigabyte": "غيغابايت",
+      "terabyte": "تيرابايت"
+    }
+  },
+  "currencies": {
+    "SAR": { "symbol": "ر.س", "name": "ريال سعودي", "code": "SAR" },
+    "USD": { "symbol": "$", "name": "دولار أمريكي", "code": "USD" },
+    "EUR": { "symbol": "€", "name": "يورو", "code": "EUR" },
+    "AED": { "symbol": "د.إ", "name": "درهم إماراتي", "code": "AED" },
+    "EGP": { "symbol": "ج.م", "name": "جنيه مصري", "code": "EGP" },
+    "KWD": { "symbol": "د.ك", "name": "دينار كويتي", "code": "KWD" },
+    "BHD": { "symbol": "د.ب", "name": "دينار بحريني", "code": "BHD" },
+    "OMR": { "symbol": "ر.ع", "name": "ريال عماني", "code": "OMR" },
+    "QAR": { "symbol": "ر.ق", "name": "ريال قطري", "code": "QAR" },
+    "YER": { "symbol": "ر.ي", "name": "ريال يمني", "code": "YER" },
+    "JOD": { "symbol": "د.أ", "name": "دينار أردني", "code": "JOD" },
+    "LBP": { "symbol": "ل.ل", "name": "ليرة لبنانية", "code": "LBP" },
+    "SYR": { "symbol": "ل.س", "name": "ليرة سورية", "code": "SYP" },
+    "IQD": { "symbol": "د.ع", "name": "دينار عراقي", "code": "IQD" },
+    "TRY": { "symbol": "₺", "name": "ليرة تركية", "code": "TRY" }
+  },
+  "plurals": {
+    "zero": "صفر",
+    "one": "واحد",
+    "two": "اثنان",
+    "few": "قليل",
+    "many": "كثير",
+    "other": "آخر"
+  }
+}

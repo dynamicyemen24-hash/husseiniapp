@@ -1,0 +1,36 @@
+{
+  "name": "@alhusseiniya/pricing-engine",
+  "version": "1.0.0",
+  "description": "Pricing engine with JsonLogic rules and WASM optimization",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.d.ts",
+    "./rules": "./dist/rules.d.ts",
+    "./solver": "./dist/solver.d.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "wasm:build": "cd wasm && cargo build --target wasm32-unknown-unknown --release && wasm-bindgen --out-dir ../dist/wasm --target web ../target/wasm32-unknown-unknown/release/pricing_solver.wasm"
+  },
+  "dependencies": {
+    "json-logic-js": "^2.0.5",
+    "decimal.js": "^10.4.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@alhusseiniya/types": "workspace:*",
+    "@alhusseiniya/eslint-config": "workspace:*",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 3,
+      "startServerCommand": "pnpm start",
+      "url": [
+        "http://localhost:3000",
+        "http://localhost:3000/app",
+        "http://localhost:3000/login"
+      ]
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.9 }],
+        "categories:accessibility": ["error", { "minScore": 0.95 }],
+        "categories:best-practices": ["error", { "minScore": 0.95 }],
+        "categories:seo": ["error", { "minScore": 0.9 }],
+        "first-contentful-paint": ["error", { "maxNumericValue": 1800 }],
+        "largest-contentful-paint": ["error", { "maxNumericValue": 2500 }],
+        "total-blocking-time": ["error", { "maxNumericValue": 200 }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1 }],
+        "speed-index": ["error", { "maxNumericValue": 2500 }],
+        "interactive": ["error", { "maxNumericValue": 3000 }],
+        "redirects": ["off"],
+        "uses-rel-preconnect": ["off"],
+        "uses-text-compression": ["error"],
+        "efficient-encoding": ["error"],
+        "uses-responsive-images": ["error"],
+        "unused-javascript": ["error"],
+        "unused-css-rules": ["error"],
+        "render-blocking-resources": ["error"]
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}

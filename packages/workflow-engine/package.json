@@ -1,0 +1,40 @@
+{
+  "name": "@alhusseiniya/workflow-engine",
+  "version": "1.0.0",
+  "description": "Pure TypeScript workflow engine using XState",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.d.ts",
+    "./machines": "./dist/machines.d.ts",
+    "./registry": "./dist/registry.d.ts",
+    "./types": "./dist/types.d.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:model": "vitest run --pool=forks"
+  },
+  "dependencies": {
+    "xstate": "^5.9.0",
+    "@xstate/fsm": "^2.1.0",
+    "zod": "^3.22.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@alhusseiniya/types": "workspace:*",
+    "@alhusseiniya/eslint-config": "workspace:*",
+    "@types/uuid": "^9.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0",
+    "@xstate/test": "^0.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
+}

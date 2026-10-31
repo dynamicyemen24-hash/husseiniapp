@@ -1,0 +1,130 @@
+{
+  "overview": {
+    "title": "البريد الإلكتروني",
+    "subtitle": "قوالب وإعدادات البريد الإلكتروني"
+  },
+  "general": {
+    "title": "البريد الإلكتروني",
+    "send": "إرسال",
+    "sendTest": "إرسال اختبار",
+    "preview": "معاينة",
+    "templates": "القوالب",
+    "settings": "الإعدادات",
+    "logs": "السجلات",
+    "queue": "طابور الإرسال"
+  },
+  "templates": {
+    "title": "قوالب البريد الإلكتروني",
+    "create": "إنشاء قالب",
+    "edit": "تعديل القالب",
+    "list": "قائمة القوالب",
+    "name": "اسم القالب",
+    "subject": "الموضوع",
+    "body": "المحتوى",
+    "bodyText": "المحتوى النصي",
+    "bodyHtml": "محتوى HTML",
+    "category": "الفئة",
+    "categories": {
+      "welcome": "ترحيب",
+      "verification": "تحقق",
+      "passwordReset": "إعادة تعيين كلمة المرور",
+      "invoice": "فاتورة",
+      "payment": "دفعة",
+      "order": "طلب",
+      "shipment": "شحن",
+      "notification": "إشعار",
+      "report": "تقرير",
+      "system": "نظام",
+      "marketing": "تسويقي",
+      "custom": "مخصص"
+    },
+    "variables": "المتغيرات",
+    "variablesList": "قائمة المتغيرات المتاحة",
+    "preview": "معاينة",
+    "sendTest": "إرسال اختبار",
+    "isActive": "نشط",
+    "isSystem": "نظامي"
+  },
+  "settings": {
+    "title": "إعدادات البريد الإلكتروني",
+    "provider": "مزود الخدمة",
+    "providers": {
+      "smtp": "SMTP",
+      "sendgrid": "SendGrid",
+      "mailgun": "Mailgun",
+      "ses": "AWS SES",
+      "postmark": "Postmark",
+      "console": "وحدة التحكم (للتطوير)"
+    },
+    "host": "المضيف",
+    "port": "المنفذ",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "encryption": "التشفير",
+    "encryptionTypes": {
+      "none": "بدون",
+      "ssl": "SSL",
+      "tls": "TLS",
+      "starttls": "STARTTLS"
+    },
+    "fromEmail": "البريد المرسل",
+    "fromName": "اسم المرسل",
+    "replyTo": "الرد إلى",
+    "testEmail": "بريد اختبار",
+    "sendTest": "إرسال بريد اختبار"
+  },
+  "logs": {
+    "title": "سجلات البريد الإلكتروني",
+    "date": "التاريخ",
+    "to": "إلى",
+    "subject": "الموضوع",
+    "status": "الحالة",
+    "statuses": {
+      "pending": "معلقة",
+      "sent": "مرسلة",
+      "failed": "فشلت",
+      "bounced": "مرتدية",
+      "opened": "مفتوحة",
+      "clicked": "مضغوض فيها"
+    },
+    "error": "الخطأ",
+    "retryCount": "عدد المحاولات",
+    "provider": "المزود",
+    "messageId": "معرف الرسالة",
+    "filter": "تصفية",
+    "dateRange": "نطاق التاريخ"
+  },
+  "queue": {
+    "title": "طابور الإرسال",
+    "pending": "في الانتظار",
+    "processing": "قيد المعالجة",
+    "completed": "مكتملة",
+    "failed": "فاشلة",
+    "retry": "إعادة المحاولة",
+    "cancel": "إلغاء",
+    "clearCompleted": "مسح المكتملة",
+    "clearFailed": "مسح الفاشلة"
+  },
+  "common": {
+    "welcome": {
+      "subject": "مرحباً بك في {{companyName}}",
+      "body": "عزيزي {{userName}}،\n\nمرحباً بك في {{companyName}}! يسعدنا انضمامك إلينا.\n\nيمكنك الآن تسجيل الدخول والبدء في استخدام المنصة.\n\nمع التحية،\nفريق {{companyName}}"
+    },
+    "verification": {
+      "subject": "تحقق من بريدك الإلكتروني",
+      "body": "عزيزي {{userName}}،\n\nيرجى التحقق من بريدك الإلكتروني باستخدام الرمز التالي:\n\n{{code}}\n\nهذا الرمز صالح لمدة {{expiryMinutes}} دقيقة.\n\nمع التحية،\nفريق {{companyName}}"
+    },
+    "passwordReset": {
+      "subject": "إعادة تعيين كلمة المرور",
+      "body": "عزيزي {{userName}}،\n\nتلقينا طلباً لإعادة تعيين كلمة المرور الخاصة بك.\n\nاضغط على الرابط التالي لإنشاء كلمة مرور جديدة:\n\n{{resetLink}}\n\nهذا الرابط صالح لمدة {{expiryHours}} ساعة.\n\nإذا لم تطلب هذا، يرجى تجاهل هذا البريد.\n\nمع التحية،\nفريق {{companyName}}"
+    },
+    "invoice": {
+      "subject": "فاتورة رقم {{invoiceNumber}} من {{companyName}}",
+      "body": "عزيزي {{customerName}}،\n\nمرفق فاتورتك رقم {{invoiceNumber}} بتاريخ {{date}}.\n\nإجمالي المبلغ: {{amount}} {{currency}}\n\nيرجى السداد قبل تاريخ الاستحقاق: {{dueDate}}\n\nمع التحية،\nفريق {{companyName}}"
+    },
+    "paymentReceived": {
+      "subject": "تأكيد استلام دفعة - {{reference}}",
+      "body": "عزيزي {{customerName}}،\n\nنشكرك على دفعتك بمبلغ {{amount}} {{currency}}.\n\nالمرجع: {{reference}}\nالتاريخ: {{date}}\n\nمع التحية،\nفريق {{companyName}}"
+    }
+  }
+}

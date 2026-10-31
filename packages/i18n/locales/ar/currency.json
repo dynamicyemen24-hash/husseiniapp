@@ -1,0 +1,98 @@
+{
+  "overview": {
+    "title": "العملات",
+    "subtitle": "تنسيقات العملات وأسعار الصرف"
+  },
+  "general": {
+    "title": "العملات",
+    "baseCurrency": "العملة الأساسية",
+    "baseCurrencyHelp": "العملة الأساسية للنظام (لا يمكن تغييرها بعد إنشاء المعاملات)",
+    "currencies": "العملات",
+    "addCurrency": "إضافة عملة",
+    "editCurrency": "تعديل العملة",
+    "code": "كود العملة",
+    "name": "اسم العملة",
+    "symbol": "الرمز",
+    "symbolPosition": "موضع الرمز",
+    "symbolPositions": {
+      "before": "قبل المبلغ",
+      "after": "بعد المبلغ"
+    },
+    "decimalPlaces": "المنازل العشرية",
+    "decimalPlacesHelp": "عدد المنازل العشرية (0-4)",
+    "thousandsSeparator": "فاصل الآلاف",
+    "decimalSeparator": "الفاصل العشري",
+    "isActive": "نشطة",
+    "isBase": "عملة أساسية",
+    "exchangeRate": "سعر الصرف",
+    "exchangeRateHelp": "1 وحدة من العملة الأساسية = X وحدة من هذه العملة",
+    "lastUpdated": "آخر تحديث",
+    "autoUpdate": "تحديث تلقائي",
+    "provider": "مزود أسعار الصرف",
+    "providers": {
+      "manual": "يدوي",
+      "exchangerate": "ExchangeRate-API",
+      "fixer": "Fixer.io",
+      "currencylayer": "CurrencyLayer",
+      "openexchangerates": "OpenExchangeRates"
+    }
+  },
+  "exchangeRates": {
+    "title": "أسعار الصرف",
+    "list": "قائمة أسعار الصرف",
+    "date": "التاريخ",
+    "fromCurrency": "من العملة",
+    "toCurrency": "إلى العملة",
+    "rate": "السعر",
+    "inverseRate": "السعر العكسي",
+    "source": "المصدر",
+    "isCurrent": "الحالي",
+    "updateRates": "تحديث الأسعار",
+    "history": "سجل الأسعار",
+    "importRates": "استيراد الأسعار",
+    "exportRates": "تصدير الأسعار"
+  },
+  "formatting": {
+    "title": "تنسيق العملة",
+    "pattern": "نمط التنسيق",
+    "patterns": {
+      "standard": "قياسي (1,234.56)",
+      "accounting": "محاسبي ((1,234.56))",
+      "compact": "مختصر (1.23K)",
+      "iso": "ISO (SAR 1,234.56)"
+    },
+    "showSymbol": "إظهار الرمز",
+    "showCode": "إظهار الكود",
+    "spaceBetween": "مسافة بين الرمز والمبلغ",
+    "negativeFormat": "تنسيق القيم السالبة",
+    "negativeFormats": {
+      "minus": "-1,234.56",
+      "parentheses": "(1,234.56)",
+      "minusSymbol": "- SAR 1,234.56"
+    }
+  },
+  "conversion": {
+    "title": "تحويل العملات",
+    "convert": "تحويل",
+    "amount": "المبلغ",
+    "from": "من",
+    "to": "إلى",
+    "result": "النتيجة",
+    "rate": "السعر المستخدم",
+    "date": "تاريخ السعر",
+    "fee": "رسوم التحويل",
+    "netAmount": "صافي المبلغ"
+  },
+  "multiCurrency": {
+    "title": "متعدد العملات",
+    "enabled": "تفعيل متعدد العملات",
+    "enabledHelp": "السماح بالمعاملات بعملات متعددة",
+    "gainLossAccount": "حساب فروق الصرف",
+    "realizedGain": "مكاسب محققة",
+    "realizedLoss": "خسائر محققة",
+    "unrealizedGain": "مكاسب غير محققة",
+    "unrealizedLoss": "خسائر غير محققة",
+    "revaluation": "إعادة تقييم",
+    "revaluationDate": "تاريخ إعادة التقييم"
+  }
+}

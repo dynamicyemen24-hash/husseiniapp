@@ -1,0 +1,161 @@
+{
+  "overview": {
+    "title": "Procurement",
+    "subtitle": "Manage purchase orders, invoices, suppliers, and requisitions"
+  },
+  "purchaseOrders": {
+    "title": "Purchase Orders",
+    "create": "Create Purchase Order",
+    "edit": "Edit Purchase Order",
+    "view": "View Purchase Order",
+    "list": "Purchase Order List",
+    "number": "Order Number",
+    "date": "Date",
+    "supplier": "Supplier",
+    "status": "Status",
+    "items": "Items",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "tax": "Tax",
+    "total": "Total",
+    "currency": "Currency",
+    "exchangeRate": "Exchange Rate",
+    "expectedDate": "Expected Delivery Date",
+    "deliveryAddress": "Delivery Address",
+    "terms": "Terms & Conditions",
+    "notes": "Notes",
+    "statuses": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "confirmed": "Confirmed",
+      "partial": "Partially Received",
+      "received": "Fully Received",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "send": "Send to Supplier",
+      "receive": "Receive",
+      "createInvoice": "Create Invoice",
+      "print": "Print",
+      "duplicate": "Duplicate",
+      "cancel": "Cancel"
+    }
+  },
+  "purchaseInvoices": {
+    "title": "Purchase Invoices",
+    "create": "Create Purchase Invoice",
+    "edit": "Edit Invoice",
+    "view": "View Invoice",
+    "list": "Invoice List",
+    "number": "Invoice Number",
+    "date": "Date",
+    "supplier": "Supplier",
+    "purchaseOrder": "Purchase Order",
+    "status": "Status",
+    "dueDate": "Due Date",
+    "items": "Items",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "tax": "Tax",
+    "total": "Total",
+    "paidAmount": "Paid Amount",
+    "balance": "Outstanding Balance",
+    "statuses": {
+      "draft": "Draft",
+      "pending": "Pending Review",
+      "approved": "Approved",
+      "partial": "Partially Paid",
+      "paid": "Fully Paid",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "approve": "Approve",
+      "pay": "Pay",
+      "print": "Print",
+      "duplicate": "Duplicate",
+      "void": "Void"
+    }
+  },
+  "purchaseReturns": {
+    "title": "Purchase Returns",
+    "create": "Create Purchase Return",
+    "edit": "Edit Return",
+    "view": "View Return",
+    "list": "Return List",
+    "originalInvoice": "Original Invoice",
+    "reason": "Reason",
+    "items": "Returned Items",
+    "statuses": {
+      "draft": "Draft",
+      "pending": "Pending Review",
+      "approved": "Approved",
+      "received": "Received",
+      "cancelled": "Cancelled"
+    }
+  },
+  "suppliers": {
+    "title": "Suppliers",
+    "create": "Add Supplier",
+    "edit": "Edit Supplier",
+    "view": "View Supplier",
+    "list": "Supplier List",
+    "name": "Supplier Name",
+    "code": "Supplier Code",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "country": "Country",
+    "taxNumber": "Tax Number",
+    "paymentTerms": "Payment Terms",
+    "creditLimit": "Credit Limit",
+    "currency": "Currency",
+    "balance": "Balance",
+    "totalPurchases": "Total Purchases",
+    "lastPurchase": "Last Purchase",
+    "status": "Status",
+    "rating": "Rating",
+    "categories": "Supply Categories"
+  },
+  "requisitions": {
+    "title": "Purchase Requisitions",
+    "create": "Create Requisition",
+    "edit": "Edit Requisition",
+    "view": "View Requisition",
+    "list": "Requisition List",
+    "number": "Requisition Number",
+    "date": "Date",
+    "requester": "Requester",
+    "department": "Department",
+    "items": "Items",
+    "status": "Status",
+    "priority": "Priority",
+    "priorities": {
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "statuses": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "convertedToPO": "Converted to PO",
+      "cancelled": "Cancelled"
+    },
+    "neededBy": "Needed By"
+  },
+  "analytics": {
+    "title": "Supplier Analytics",
+    "spendAnalysis": "Spend Analysis",
+    "supplierPerformance": "Supplier Performance",
+    "onTimeDelivery": "On-Time Delivery",
+    "qualityRating": "Quality Rating",
+    "priceVariance": "Price Variance",
+    "topSuppliers": "Top Suppliers",
+    "spendByCategory": "Spend by Category",
+    "spendTrend": "Spend Trend"
+  }
+}

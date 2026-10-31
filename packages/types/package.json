@@ -1,0 +1,38 @@
+{
+  "name": "@alhusseiniya/types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types and Zod schemas for AlHusainia platform",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.d.ts",
+    "./sales": "./dist/sales.d.ts",
+    "./inventory": "./dist/inventory.d.ts",
+    "./accounting": "./dist/accounting.d.ts",
+    "./hr": "./dist/hr.d.ts",
+    "./procurement": "./dist/procurement.d.ts",
+    "./workflow": "./dist/workflow.d.ts",
+    "./api": "./dist/api.d.ts",
+    "./common": "./dist/common.d.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@alhusseiniya/eslint-config": "workspace:*",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
+}

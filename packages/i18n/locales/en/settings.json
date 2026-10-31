@@ -1,0 +1,211 @@
+{
+  "overview": {
+    "title": "Settings",
+    "subtitle": "Configure system, users, modules, and integrations"
+  },
+  "general": {
+    "title": "General Settings",
+    "companyName": "Company Name",
+    "companyNameEn": "Company Name (English)",
+    "tagline": "Tagline",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "website": "Website",
+    "taxNumber": "Tax Number",
+    "commercialRegister": "Commercial Register",
+    "logo": "Logo",
+    "favicon": "Favicon",
+    "defaultCurrency": "Default Currency",
+    "defaultLanguage": "Default Language",
+    "timezone": "Timezone",
+    "dateFormat": "Date Format",
+    "numberFormat": "Number Format",
+    "weekStart": "Week Start",
+    "fiscalYearStart": "Fiscal Year Start"
+  },
+  "company": {
+    "title": "Company Information",
+    "branches": "Branches",
+    "createBranch": "Add Branch",
+    "editBranch": "Edit Branch",
+    "branchName": "Branch Name",
+    "branchCode": "Branch Code",
+    "address": "Address",
+    "manager": "Branch Manager",
+    "isMain": "Main Branch",
+    "isActive": "Active"
+  },
+  "users": {
+    "title": "Users",
+    "create": "Add User",
+    "edit": "Edit User",
+    "list": "User List",
+    "username": "Username",
+    "email": "Email",
+    "fullName": "Full Name",
+    "phone": "Phone",
+    "role": "Role",
+    "roles": "Roles",
+    "permissions": "Permissions",
+    "status": "Status",
+    "statuses": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "locked": "Locked",
+      "pending": "Pending"
+    },
+    "lastLogin": "Last Login",
+    "twoFactor": "Two-Factor Authentication",
+    "resetPassword": "Reset Password",
+    "sendInvite": "Send Invite"
+  },
+  "roles": {
+    "title": "Roles",
+    "create": "Add Role",
+    "edit": "Edit Role",
+    "list": "Role List",
+    "name": "Role Name",
+    "description": "Description",
+    "permissions": "Permissions",
+    "isSystem": "System",
+    "userCount": "User Count"
+  },
+  "permissions": {
+    "title": "Permissions",
+    "modules": "Modules",
+    "actions": "Actions",
+    "resources": "Resources",
+    "create": "Create",
+    "read": "Read",
+    "update": "Update",
+    "delete": "Delete",
+    "approve": "Approve",
+    "export": "Export",
+    "import": "Import",
+    "print": "Print"
+  },
+  "modules": {
+    "title": "Modules",
+    "list": "Module List",
+    "name": "Module Name",
+    "description": "Description",
+    "isEnabled": "Enabled",
+    "isInstalled": "Installed",
+    "version": "Version",
+    "dependencies": "Dependencies"
+  },
+  "integrations": {
+    "title": "Integrations",
+    "list": "Integration List",
+    "name": "Integration Name",
+    "type": "Type",
+    "types": {
+      "api": "API",
+      "webhook": "Webhook",
+      "oauth": "OAuth",
+      "sftp": "SFTP",
+      "email": "Email",
+      "sms": "SMS"
+    },
+    "config": "Configuration",
+    "status": "Status",
+    "statuses": {
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "error": "Error",
+      "pending": "Pending Setup"
+    },
+    "testConnection": "Test Connection",
+    "syncNow": "Sync Now"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "channels": "Notification Channels",
+    "email": "Email",
+    "sms": "SMS",
+    "push": "Push Notifications",
+    "inApp": "In-App",
+    "templates": "Templates",
+    "createTemplate": "Create Template",
+    "editTemplate": "Edit Template",
+    "events": "Events",
+    "preferences": "Preferences"
+  },
+  "backup": {
+    "title": "Backup",
+    "create": "Create Backup",
+    "list": "Backup List",
+    "schedule": "Backup Schedule",
+    "frequency": "Frequency",
+    "frequencies": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "retention": "Retention Period",
+    "includeFiles": "Include Files",
+    "encrypt": "Encrypt",
+    "lastBackup": "Last Backup",
+    "nextBackup": "Next Backup",
+    "restore": "Restore",
+    "download": "Download"
+  },
+  "audit": {
+    "title": "Audit Log",
+    "list": "Audit Logs",
+    "date": "Date",
+    "user": "User",
+    "action": "Action",
+    "entity": "Entity",
+    "entityId": "Entity ID",
+    "changes": "Changes",
+    "ipAddress": "IP Address",
+    "userAgent": "User Agent",
+    "filter": "Filter",
+    "export": "Export"
+  },
+  "customization": {
+    "title": "Customization",
+    "theme": "Theme",
+    "themes": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "primaryColor": "Primary Color",
+    "font": "Font",
+    "density": "Density",
+    "animations": "Animations",
+    "compactMode": "Compact Mode",
+    "sidebarPosition": "Sidebar Position",
+    "language": "Language",
+    "rtl": "RTL Support"
+  },
+  "security": {
+    "title": "Security",
+    "passwordPolicy": "Password Policy",
+    "minLength": "Min Length",
+    "requireUppercase": "Require Uppercase",
+    "requireLowercase": "Require Lowercase",
+    "requireNumbers": "Require Numbers",
+    "requireSymbols": "Require Symbols",
+    "expiryDays": "Expiry Days",
+    "historyCount": "Password History",
+    "lockoutAttempts": "Lockout Attempts",
+    "lockoutDuration": "Lockout Duration",
+    "sessionTimeout": "Session Timeout",
+    "maxConcurrentSessions": "Max Concurrent Sessions",
+    "ipWhitelist": "IP Whitelist",
+    "auditLogRetention": "Audit Log Retention"
+  },
+  "localization": {
+    "title": "Localization",
+    "languages": "Languages",
+    "currencies": "Currencies",
+    "dateFormats": "Date Formats",
+    "numberFormats": "Number Formats",
+    "timeZones": "Time Zones",
+    "units": "Units of Measure"
+  }
+}

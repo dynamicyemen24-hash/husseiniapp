@@ -1,0 +1,138 @@
+{
+  "overview": {
+    "title": "Reports",
+    "subtitle": "Reports, analytics, and dashboards"
+  },
+  "general": {
+    "title": "Reports",
+    "list": "Report List",
+    "create": "Create Report",
+    "edit": "Edit Report",
+    "view": "View Report",
+    "run": "Run Report",
+    "schedule": "Schedule Report",
+    "export": "Export Report",
+    "print": "Print Report",
+    "share": "Share Report",
+    "favorite": "Add to Favorites",
+    "duplicate": "Duplicate Report",
+    "delete": "Delete Report"
+  },
+  "types": {
+    "title": "Report Types",
+    "standard": "Standard Reports",
+    "custom": "Custom Reports",
+    "scheduled": "Scheduled Reports",
+    "adHoc": "Ad Hoc Reports",
+    "dashboards": "Dashboards"
+  },
+  "categories": {
+    "sales": "Sales Reports",
+    "inventory": "Inventory Reports",
+    "accounting": "Accounting Reports",
+    "hr": "HR Reports",
+    "procurement": "Procurement Reports",
+    "financial": "Financial Reports",
+    "operational": "Operational Reports",
+    "executive": "Executive Reports"
+  },
+  "parameters": {
+    "title": "Report Parameters",
+    "dateRange": "Date Range",
+    "fromDate": "From Date",
+    "toDate": "To Date",
+    "branch": "Branch",
+    "department": "Department",
+    "employee": "Employee",
+    "customer": "Customer",
+    "supplier": "Supplier",
+    "product": "Product",
+    "category": "Category",
+    "warehouse": "Warehouse",
+    "currency": "Currency",
+    "groupBy": "Group By",
+    "sortBy": "Sort By",
+    "filters": "Filters",
+    "advancedFilters": "Advanced Filters"
+  },
+  "output": {
+    "format": "Output Format",
+    "formats": {
+      "pdf": "PDF",
+      "excel": "Excel",
+      "csv": "CSV",
+      "html": "HTML",
+      "json": "JSON"
+    },
+    "orientation": "Orientation",
+    "orientations": {
+      "portrait": "Portrait",
+      "landscape": "Landscape"
+    },
+    "pageSize": "Page Size",
+    "pageSizes": {
+      "a4": "A4",
+      "a3": "A3",
+      "letter": "Letter",
+      "legal": "Legal"
+    },
+    "includeHeader": "Include Header",
+    "includeFooter": "Include Footer",
+    "pageNumbers": "Page Numbers"
+  },
+  "scheduling": {
+    "title": "Report Scheduling",
+    "frequency": "Frequency",
+    "frequencies": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "yearly": "Yearly",
+      "custom": "Custom"
+    },
+    "time": "Run Time",
+    "timezone": "Timezone",
+    "recipients": "Recipients",
+    "subject": "Email Subject",
+    "message": "Message",
+    "attachFormat": "Attachment Format",
+    "isActive": "Active",
+    "nextRun": "Next Run",
+    "lastRun": "Last Run",
+    "runHistory": "Run History"
+  },
+  "visualization": {
+    "title": "Visualization",
+    "chartType": "Chart Type",
+    "chartTypes": {
+      "bar": "Bar",
+      "line": "Line",
+      "pie": "Pie",
+      "donut": "Donut",
+      "area": "Area",
+      "scatter": "Scatter",
+      "heatmap": "Heatmap",
+      "gauge": "Gauge",
+      "funnel": "Funnel",
+      "waterfall": "Waterfall"
+    },
+    "xAxis": "X Axis",
+    "yAxis": "Y Axis",
+    "series": "Series",
+    "legend": "Legend",
+    "tooltip": "Tooltip",
+    "dataLabels": "Data Labels",
+    "gridLines": "Grid Lines"
+  },
+  "permissions": {
+    "view": "View Reports",
+    "create": "Create Reports",
+    "edit": "Edit Reports",
+    "delete": "Delete Reports",
+    "run": "Run Reports",
+    "schedule": "Schedule Reports",
+    "export": "Export Reports",
+    "admin": "Admin Reports"
+  }
+}

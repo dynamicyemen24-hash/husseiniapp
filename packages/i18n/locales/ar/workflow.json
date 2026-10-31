@@ -1,0 +1,134 @@
+{
+  "overview": {
+    "title": "سير العمل",
+    "subtitle": "إدارة الموافقات والأتمتة وقوالب العمليات"
+  },
+  "approvals": {
+    "title": "الموافقات",
+    "myApprovals": "موافقاتي",
+    "pending": "موافقات معلقة",
+    "approved": "موافقات معتمدة",
+    "rejected": "موافقات مرفوضة",
+    "delegated": "موافقات مفوضة",
+    "requestApproval": "طلب موافقة",
+    "approve": "اعتماد",
+    "reject": "رفض",
+    "delegate": "تفويض",
+    "comment": "تعليق",
+    "required": "موافقة مطلوبة",
+    "optional": "موافقة اختيارية",
+    "status": "الحالة",
+    "statuses": {
+      "pending": "معلقة",
+      "approved": "معتمدة",
+      "rejected": "مرفوضة",
+      "delegated": "مفوضة",
+      "expired": "منتهية الصلاحية"
+    },
+    "levels": "مستويات الموافقة",
+    "currentLevel": "المستوى الحالي",
+    "nextApprover": "المعتمد التالي",
+    "finalApproval": "الموافقة النهائية"
+  },
+  "workflows": {
+    "title": "سير العمل",
+    "create": "إنشاء سير عمل",
+    "edit": "تعديل سير العمل",
+    "list": "قائمة سير العمل",
+    "name": "اسم سير العمل",
+    "description": "الوصف",
+    "trigger": "المحفز",
+    "triggers": {
+      "manual": "يدوي",
+      "onCreate": "عند الإنشاء",
+      "onUpdate": "عند التعديل",
+      "onStatusChange": "عند تغيير الحالة",
+      "scheduled": "مجدول"
+    },
+    "steps": "الخطوات",
+    "step": "خطوة",
+    "stepName": "اسم الخطوة",
+    "stepType": "نوع الخطوة",
+    "stepTypes": {
+      "approval": "موافقة",
+      "notification": "إشعار",
+      "task": "مهمة",
+      "condition": "شرط",
+      "parallel": "متوازي",
+      "script": "سكريبت"
+    },
+    "assignee": "المكلف",
+    "role": "الدور",
+    "condition": "الشرط",
+    "isActive": "نشط",
+    "version": "الإصدار"
+  },
+  "templates": {
+    "title": "قوالب سير العمل",
+    "create": "إنشاء قالب",
+    "edit": "تعديل القالب",
+    "list": "قائمة القوالب",
+    "name": "اسم القالب",
+    "category": "الفئة",
+    "description": "الوصف",
+    "isSystem": "نظامي",
+    "usageCount": "عدد الاستخدامات"
+  },
+  "automation": {
+    "title": "الأتمتة",
+    "create": "إنشاء قاعدة أتمتة",
+    "edit": "تعديل القاعدة",
+    "list": "قواعد الأتمتة",
+    "name": "اسم القاعدة",
+    "trigger": "المحفز",
+    "action": "الإجراء",
+    "actions": {
+      "sendEmail": "إرسال بريد إلكتروني",
+      "createTask": "إنشاء مهمة",
+      "updateField": "تحديث حقل",
+      "createRecord": "إنشاء سجل",
+      "webhook": "استدعاء ويب هوك",
+      "runScript": "تشغيل سكريبت"
+    },
+    "conditions": "الشروط",
+    "isActive": "نشط",
+    "runCount": "عدد مرات التشغيل",
+    "lastRun": "آخر تشغيل"
+  },
+  "tasks": {
+    "title": "المهام",
+    "create": "إنشاء مهمة",
+    "edit": "تعديل المهمة",
+    "list": "قائمة المهام",
+    "title": "عنوان المهمة",
+    "description": "الوصف",
+    "assignee": "المكلف",
+    "dueDate": "تاريخ الاستحقاق",
+    "priority": "الأولوية",
+    "priorities": {
+      "low": "منخفضة",
+      "normal": "عادية",
+      "high": "عالية",
+      "urgent": "عاجلة"
+    },
+    "status": "الحالة",
+    "statuses": {
+      "todo": "قيد الانتظار",
+      "inProgress": "قيد التنفيذ",
+      "review": "قيد المراجعة",
+      "done": "مكتملة",
+      "cancelled": "ملغية"
+    },
+    "relatedTo": "مرتبطة بـ",
+    "comments": "التعليقات"
+  },
+  "notifications": {
+    "title": "إشعارات سير العمل",
+    "email": "بريد إلكتروني",
+    "inApp": "داخل التطبيق",
+    "sms": "رسالة نصية",
+    "push": "إشعار فوري",
+    "template": "قالب الإشعار",
+    "recipients": "المستلمون"
+  }
+}

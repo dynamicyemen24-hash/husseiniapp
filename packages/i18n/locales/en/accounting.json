@@ -1,0 +1,187 @@
+{
+  "overview": {
+    "title": "Accounting",
+    "subtitle": "Manage accounts, journal entries, fiscal periods, and financial statements"
+  },
+  "chartOfAccounts": {
+    "title": "Chart of Accounts",
+    "create": "Add Account",
+    "edit": "Edit Account",
+    "list": "Account List",
+    "code": "Account Code",
+    "name": "Account Name",
+    "nameEn": "English Name",
+    "type": "Account Type",
+    "parent": "Parent Account",
+    "currency": "Currency",
+    "isActive": "Active",
+    "allowPosting": "Allow Posting",
+    "balance": "Balance",
+    "openingBalance": "Opening Balance",
+    "types": {
+      "asset": "Asset",
+      "liability": "Liability",
+      "equity": "Equity",
+      "revenue": "Revenue",
+      "expense": "Expense",
+      "costOfSales": "Cost of Sales"
+    },
+    "nature": {
+      "debit": "Debit",
+      "credit": "Credit"
+    }
+  },
+  "journalEntries": {
+    "title": "Journal Entries",
+    "create": "Create Entry",
+    "edit": "Edit Entry",
+    "view": "View Entry",
+    "list": "Entry List",
+    "number": "Entry Number",
+    "date": "Date",
+    "reference": "Reference",
+    "narration": "Narration",
+    "lines": "Lines",
+    "account": "Account",
+    "debit": "Debit",
+    "credit": "Credit",
+    "totalDebit": "Total Debit",
+    "totalCredit": "Total Credit",
+    "difference": "Difference",
+    "isBalanced": "Balanced",
+    "status": "Status",
+    "statuses": {
+      "draft": "Draft",
+      "posted": "Posted",
+      "reversed": "Reversed",
+      "void": "Void"
+    },
+    "actions": {
+      "post": "Post",
+      "reverse": "Reverse",
+      "void": "Void",
+      "print": "Print",
+      "duplicate": "Duplicate"
+    }
+  },
+  "manualJournal": {
+    "title": "Manual Journal",
+    "create": "Create Manual Journal",
+    "template": "Journal Template",
+    "saveAsTemplate": "Save as Template"
+  },
+  "fiscalPeriods": {
+    "title": "Fiscal Periods",
+    "create": "Add Fiscal Period",
+    "edit": "Edit Period",
+    "list": "Period List",
+    "name": "Period Name",
+    "code": "Period Code",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "status": "Status",
+    "statuses": {
+      "open": "Open",
+      "closed": "Closed",
+      "locked": "Locked"
+    },
+    "yearEnd": "Year-End Close",
+    "carryForward": "Carry Forward Balances"
+  },
+  "financialStatements": {
+    "title": "Financial Statements",
+    "trialBalance": "Trial Balance",
+    "balanceSheet": "Balance Sheet",
+    "incomeStatement": "Income Statement",
+    "cashFlow": "Cash Flow Statement",
+    "equityChanges": "Statement of Changes in Equity",
+    "notes": "Notes to Financial Statements",
+    "asOfDate": "As of Date",
+    "fromDate": "From Date",
+    "toDate": "To Date",
+    "comparative": "Comparative",
+    "currency": "Currency"
+  },
+  "costCenters": {
+    "title": "Cost Centers",
+    "create": "Add Cost Center",
+    "edit": "Edit Cost Center",
+    "list": "Cost Center List",
+    "code": "Center Code",
+    "name": "Center Name",
+    "parent": "Parent Center",
+    "isActive": "Active",
+    "budget": "Budget",
+    "actual": "Actual",
+    "variance": "Variance"
+  },
+  "tax": {
+    "title": "Tax Management",
+    "create": "Add Tax",
+    "edit": "Edit Tax",
+    "list": "Tax List",
+    "name": "Tax Name",
+    "code": "Tax Code",
+    "rate": "Rate",
+    "type": "Type",
+    "types": {
+      "vat": "VAT",
+      "sales": "Sales Tax",
+      "withholding": "Withholding Tax",
+      "customs": "Customs Duty"
+    },
+    "isActive": "Active",
+    "accounts": {
+      "output": "Output Tax Account",
+      "input": "Input Tax Account"
+    }
+  },
+  "zatca": {
+    "title": "ZATCA Integration",
+    "csid": "CSID",
+    "complianceCheck": "Compliance Check",
+    "invoiceReporting": "Invoice Reporting",
+    "status": "Status",
+    "statuses": {
+      "compliant": "Compliant",
+      "nonCompliant": "Non-Compliant",
+      "pending": "Pending Review"
+    }
+  },
+  "payments": {
+    "title": "Payments",
+    "receive": "Receive Payment",
+    "pay": "Make Payment",
+    "list": "Payment List",
+    "date": "Date",
+    "party": "Party",
+    "amount": "Amount",
+    "method": "Payment Method",
+    "methods": {
+      "cash": "Cash",
+      "bankTransfer": "Bank Transfer",
+      "check": "Check",
+      "card": "Card",
+      "wallet": "E-Wallet"
+    },
+    "reference": "Reference",
+    "bankAccount": "Bank Account",
+    "status": "Status",
+    "statuses": {
+      "pending": "Pending",
+      "cleared": "Cleared",
+      "bounced": "Bounced",
+      "cancelled": "Cancelled"
+    }
+  },
+  "reports": {
+    "title": "Accounting Reports",
+    "generalLedger": "General Ledger",
+    "subLedger": "Sub-Ledger",
+    "accountStatement": "Account Statement",
+    "agingReceivables": "Receivables Aging",
+    "agingPayables": "Payables Aging",
+    "taxReport": "Tax Report",
+    "cashFlowReport": "Cash Flow Report"
+  }
+}

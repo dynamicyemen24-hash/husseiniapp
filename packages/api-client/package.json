@@ -1,0 +1,42 @@
+{
+  "name": "@alhusseiniya/api-client",
+  "version": "1.0.0",
+  "description": "Typed API client for AlHusainia platform",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.d.ts",
+    "./react-query": "./dist/react-query.d.ts",
+    "./fetch": "./dist/fetch.d.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.0.0",
+    "react": "^18.2.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "@trpc/client": "^10.45.0",
+    "@trpc/react-query": "^10.45.0",
+    "superjson": "^2.2.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@alhusseiniya/types": "workspace:*",
+    "@alhusseiniya/eslint-config": "workspace:*",
+    "@tanstack/react-query": "^5.0.0",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
+}

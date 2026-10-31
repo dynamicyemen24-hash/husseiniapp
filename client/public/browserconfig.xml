@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="/icon-192.png"/>
+      <square150x150logo src="/icon-192.png"/>
+      <square310x310logo src="/icon-512.png"/>
+      <wide310x150logo src="/icon-192.png"/>
+      <TileColor>#102a2b</TileColor>
+    </tile>
+    <notification>
+      <polling-uri src="https://alhusainiaye.vercel.app/api/notifications"/>
+    </notification>
+  </msapplication>
+</browserconfig>

@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-10-23T13:28:39.465Z",
+  "rtoTests": [
+    {
+      "passed": false,
+      "actualRTOSeconds": 5,
+      "targetRTOSeconds": 300,
+      "details": "Database failed to recover within 300s",
+      "timestamp": "2026-10-23T13:28:22.278Z"
+    },
+    {
+      "passed": false,
+      "actualRTOSeconds": 3,
+      "targetRTOSeconds": 120,
+      "details": "Application failed to recover within 120s",
+      "timestamp": "2026-10-23T13:28:25.301Z"
+    },
+    {
+      "passed": true,
+      "actualRTOSeconds": 2,
+      "targetRTOSeconds": 30,
+      "details": "Cache recovered in 2s (target: 30s)",
+      "timestamp": "2026-10-23T13:28:27.302Z"
+    },
+    {
+      "passed": false,
+      "actualRTOSeconds": 10,
+      "targetRTOSeconds": 300,
+      "details": "Full stack failed to recover within 300s",
+      "timestamp": "2026-10-23T13:28:37.326Z"
+    }
+  ],
+  "rpoTests": [
+    {
+      "passed": false,
+      "actualRPOSeconds": 246,
+      "targetRPOSeconds": 60,
+      "dataLossRecords": 5865,
+      "details": "Data loss: 5865/-1894 records (0.00%) - Target RPO: 60s",
+      "timestamp": "2026-10-23T13:28:39.463Z"
+    },
+    {
+      "passed": true,
+      "actualRPOSeconds": 1800,
+      "targetRPOSeconds": 3600,
+      "dataLossRecords": 0,
+      "details": "Last backup: 2026-10-23T12:58:39.464Z (30 min ago, target: 60 min)",
+      "timestamp": "2026-10-23T13:28:39.464Z"
+    }
+  ],
+  "summary": {
+    "rtoPassed": 1,
+    "rtoTotal": 4,
+    "rpoPassed": 1,
+    "rpoTotal": 2,
+    "overallPassed": false
+  }
+}

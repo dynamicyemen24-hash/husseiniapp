@@ -1,0 +1,130 @@
+{
+  "overview": {
+    "title": "وحدات القياس",
+    "subtitle": "إدارة وحدات القياس والتحويلات"
+  },
+  "general": {
+    "title": "وحدات القياس",
+    "list": "قائمة الوحدات",
+    "create": "إضافة وحدة",
+    "edit": "تعديل الوحدة",
+    "name": "اسم الوحدة",
+    "symbol": "الرمز",
+    "nameEn": "الاسم بالإنجليزية",
+    "symbolEn": "الرمز بالإنجليزية",
+    "type": "النوع",
+    "types": {
+      "length": "طول",
+      "weight": "وزن",
+      "volume": "حجم",
+      "area": "مساحة",
+      "time": "وقت",
+      "data": "بيانات",
+      "count": "عدد",
+      "custom": "مخصص"
+    },
+    "baseUnit": "الوحدة الأساسية",
+    "conversionFactor": "معامل التحويل",
+    "conversionFactorHelp": "1 وحدة أساسية = X من هذه الوحدة",
+    "precision": "الدقة",
+    "precisionHelp": "عدد المنازل العشرية للعرض",
+    "isActive": "نشطة",
+    "isDefault": "افتراضية للنوع"
+  },
+  "categories": {
+    "length": {
+      "title": "وحدات الطول",
+      "units": {
+        "meter": "متر",
+        "kilometer": "كيلومتر",
+        "centimeter": "سنتيمتر",
+        "millimeter": "مليمتر",
+        "inch": "بوصة",
+        "foot": "قدم",
+        "yard": "يارد",
+        "mile": "ميل"
+      }
+    },
+    "weight": {
+      "title": "وحدات الوزن",
+      "units": {
+        "kilogram": "كيلوغرام",
+        "gram": "غرام",
+        "ton": "طن",
+        "pound": "رطل",
+        "ounce": "أونصة",
+        "stone": "ستون"
+      }
+    },
+    "volume": {
+      "title": "وحدات الحجم",
+      "units": {
+        "liter": "لتر",
+        "milliliter": "مليلتر",
+        "cubicMeter": "متر مكعب",
+        "gallon": "غالون",
+        "quart": "كوارت",
+        "pint": "باينت",
+        "cup": "كوب",
+        "fluidOunce": "أونصة سائلة"
+      }
+    },
+    "area": {
+      "title": "وحدات المساحة",
+      "units": {
+        "squareMeter": "متر مربع",
+        "hectare": "هكتار",
+        "squareKilometer": "كيلومتر مربع",
+        "acre": "فدان",
+        "squareFoot": "قدم مربع",
+        "squareYard": "يارد مربع"
+      }
+    },
+    "time": {
+      "title": "وحدات الوقت",
+      "units": {
+        "second": "ثانية",
+        "minute": "دقيقة",
+        "hour": "ساعة",
+        "day": "يوم",
+        "week": "أسبوع",
+        "month": "شهر",
+        "year": "سنة"
+      }
+    },
+    "count": {
+      "title": "وحدات العد",
+      "units": {
+        "piece": "قطعة",
+        "box": "صندوق",
+        "pack": "علبة",
+        "dozen": "دستة",
+        "gross": "غروس",
+        "ream": "ريسمة",
+        "roll": "لفة",
+        "sheet": "ورقة",
+        "meter": "متر",
+        "kilogram": "كيلوغرام"
+      }
+    }
+  },
+  "conversions": {
+    "title": "التحويلات",
+    "list": "قائمة التحويلات",
+    "create": "إضافة تحويل",
+    "edit": "تعديل التحويل",
+    "fromUnit": "من الوحدة",
+    "toUnit": "إلى الوحدة",
+    "factor": "المعامل",
+    "formula": "الصيغة",
+    "isActive": "نشط"
+  },
+  "productUnits": {
+    "title": "وحدات المنتج",
+    "baseUnit": "الوحدة الأساسية",
+    "alternateUnits": "وحدات بديلة",
+    "conversions": "تحويلات المنتج",
+    "defaultSalesUnit": "وحدة المبيعات الافتراضية",
+    "defaultPurchaseUnit": "وحدة المشتريات الافتراضية"
+  }
+}

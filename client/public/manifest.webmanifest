@@ -1,0 +1,57 @@
+{
+  "id": "/",
+  "name": "الحسينية لخدمات الأعمال",
+  "short_name": "الحسينية",
+  "description": "الحسينية لخدمات الأعمال — منصة Uamex_erp الموحدة للحوكمة والهندسة والمعرفة، تعمل أوفلاين مع مزامنة تلقائية.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#0c1b1c",
+  "theme_color": "#102a2b",
+  "orientation": "any",
+  "categories": ["business", "finance", "productivity"],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "لوحة التحكم",
+      "short_name": "لوحة التحكم",
+      "url": "/app",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "الاشتراك والفوترة",
+      "short_name": "الاشتراك",
+      "url": "/billing",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "تحميل/تثبيت التطبيق",
+      "short_name": "التثبيت",
+      "url": "/download",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+#!/usr/bin/env tsx
+/**
+ * ALHUSAINIA Automated Penetration Testing
+ * ========================================
+ * OWASP ZAP Baseline + Active Scan integration for CI/CD.
+ * Runs as GitHub Action or locally.
+ */
+
+import { execSync, spawn } from "child_process";
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from "fs";
+import { resolve } from "path";
+
+interface ZapConfig {
+  targetUrl: string;
+  apiKey?: string;
+  dockerImage: string;
+  baselineOnly: boolean;
+  activeScan: boolean;
+  scanPolicy: string;
+  maxDuration: number; // minutes
+  failOnSeverity: "high" | "medium" | "low";
+}
+
+interface ZapFinding {
+  name: string;
+  severity: "high" | "medium" | "low" | "informational";
+  confidence: "high" | "medium" | "low" | "false_positive";
+  url: string;
+  parameter?: string;
+  description: string;
+  solution: string;
+  reference: string;
+  cweId?: number;
+  wascId?: number;
+}
+
+interface ZapReport {
+  generatedAt: string;
+  target: string;
+  zapVersion: string;
+  scanDuration: number;
+  findings: ZapFinding[];
+  summary: {
+    high: number;
+    medium: number;
+    low: number;
+    informational: number;
+  };
+}
+
+const DEFAULT_CONFIG: ZapConfig = {
+  targetUrl: process.env.ZAP_TARGET_URL || "http://localhost:3000",
+  apiKey: process.env.ZAP_API_KEY,
+  dockerImage: "owasp/zap2docker-stable:latest",
+  baselineOnly: false,
+  activeScan: true,
+  scanPolicy: "default",
+  maxDuration: 30,
+  failOnSeverity: "high",
+};
+
+const RESULTS_DIR = resolve(process.cwd(), "penetration-test-results");
+if (!existsSync(RESULTS_DIR)) mkdirSync(RESULTS_DIR, { recursive: true });
+
+// ============================================================================
+// ZAP ORCHESTRATION
+// ============================================================================
+
+async function checkZapDockerImage(config: ZapConfig): Promise<boolean> {
+  try {
+    execSync(`docker pull ${config.dockerImage}`, { stdio: "ignore" });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function buildZapCommand(config: ZapConfig, reportPath: string): string[] {
+  const args = [
+    "run", "--rm",
+    "-v", `${RESULTS_DIR}:/zap/wrk/:rw`,
+    "-t", config.dockerImage,
+  ];
+
+  if (config.apiKey) {
+    args.push("-z", `apiKey=${config.apiKey}`);
+  }
+
+  // Baseline scan (passive)
+  if (config.baselineOnly) {
+    args.push("zap-baseline.py");
+    args.push("-t", config.targetUrl);
+    args.push("-r", `/zap/wrk/${reportPath}`);
+    args.push("-J"); // JSON output
+    return args;
+  }
+
+  // Full scan with active scanning
+  args.push("zap-full-scan.py");
+  args.push("-t", config.targetUrl);
+  args.push("-r", `/zap/wrk/${reportPath}`);
+  args.push("-J"); // JSON output
+  args.push("-P", config.scanPolicy);
+  args.push("-m", String(config.maxDuration));
+  
+  if (!config.activeScan) {
+    args.push("-a"); // Disable active scan
+  }
+
+  return args;
+}
+
+async function runZapScan(config: ZapConfig): Promise<ZapReport> {
+  const timestamp = Date.now();
+  const reportFile = `zap-report-${timestamp}.json`;
+  const htmlReport = `zap-report-${timestamp}.html`;
+  const reportPath = reportFile;
+
+  console.log(`🔍 Starting OWASP ZAP scan on ${config.targetUrl}`);
+  console.log(`   Mode: ${config.baselineOnly ? "Baseline (passive)" : config.activeScan ? "Full (active)" : "Passive only"}`);
+  console.log(`   Max duration: ${config.maxDuration} minutes`);
+
+  // Check Docker
+  console.log("📦 Pulling ZAP Docker image...");
+  if (!await checkZapDockerImage(config)) {
+    throw new Error("Failed to pull ZAP Docker image");
+  }
+
+  // Run ZAP
+  const zapArgs = buildZapCommand(config, reportPath);
+  console.log(`🚀 Running: docker ${zapArgs.join(" ")}`);
+
+  const startTime = Date.now();
+  
+  try {
+    execSync(`docker ${zapArgs.join(" ")}`, {
+      stdio: "pipe",
+      timeout: (config.maxDuration + 5) * 60 * 1000,
+      encoding: "utf-8",
+    });
+  } catch (error: any) {
+    // ZAP returns non-zero exit code when findings exist
+    // Exit code 1 = warnings, 2 = errors, 3 = both
+    const output = error.stdout?.toString() || "";
+    const stderr = error.stderr?.toString() || "";
+    
+    // Check if reports were generated despite exit code
+    const fullReportPath = resolve(RESULTS_DIR, reportFile);
+    if (!existsSync(fullReportPath)) {
+      throw new Error(`ZAP scan failed: ${stderr}\n${output}`, { cause: error });
+    }
+    console.log("⚠️ ZAP completed with findings (non-zero exit code)");
+  }
+
+  const scanDuration = Date.now() - startTime;
+  console.log(`✅ Scan completed in ${(scanDuration / 1000 / 60).toFixed(1)} minutes`);
+
+  // Parse results
+  const fullReportPath = resolve(RESULTS_DIR, reportFile);
+  const report = parseZapReport(fullReportPath, config.targetUrl, config.dockerImage, scanDuration);
+  
+  // Save HTML report too
+  const htmlPath = resolve(RESULTS_DIR, htmlReport);
+  if (existsSync(resolve(RESULTS_DIR, reportFile.replace(".json", ".html")))) {
+    // HTML report already generated by ZAP
+  }
+
+  return report;
+}
+
+// ============================================================================
+// REPORT PARSING
+// ============================================================================
+
+function parseZapReport(jsonPath: string, target: string, zapVersion: string, scanDuration: number): ZapReport {
+  const content = readFileSync(jsonPath, "utf-8");
+  const data = JSON.parse(content);
+
+  const findings: ZapFinding[] = [];
+  
+  // Parse ZAP JSON format
+  if (data.site && Array.isArray(data.site)) {
+    for (const site of data.site) {
+      if (site.alerts && Array.isArray(site.alerts)) {
+        for (const alert of site.alerts) {
+          findings.push({
+            name: alert.name || "Unknown",
+            severity: mapSeverity(alert.riskcode),
+            confidence: mapConfidence(alert.confidence),
+            url: alert.uri || site["@name"],
+            parameter: alert.param,
+            description: alert.desc || "",
+            solution: alert.solution || "",
+            reference: alert.reference || "",
+            cweId: alert.cweid ? parseInt(alert.cweid) : undefined,
+            wascId: alert.wascid ? parseInt(alert.wascid) : undefined,
+          });
+        }
+      }
+    }
+  }
+
+  const summary = {
+    high: findings.filter(f => f.severity === "high").length,
+    medium: findings.filter(f => f.severity === "medium").length,
+    low: findings.filter(f => f.severity === "low").length,
+    informational: findings.filter(f => f.severity === "informational").length,
+  };
+
+  return {
+    generatedAt: new Date().toISOString(),
+    target,
+    zapVersion,
+    scanDuration,
+    findings,
+    summary,
+  };
+}
+
+function mapSeverity(riskCode?: string): ZapFinding["severity"] {
+  switch (riskCode) {
+    case "3": return "high";
+    case "2": return "medium";
+    case "1": return "low";
+    default: return "informational";
+  }
+}
+
+function mapConfidence(confidence?: string): ZapFinding["confidence"] {
+  switch (confidence) {
+    case "3": return "high";
+    case "2": return "medium";
+    case "1": return "low";
+    default: return "low";
+  }
+}
+
+// ============================================================================
+// REPORTING
+// ============================================================================
+
+function generateHtmlReport(report: ZapReport): string {
+  const highFindings = report.findings.filter(f => f.severity === "high");
+  const mediumFindings = report.findings.filter(f => f.severity === "medium");
+  const lowFindings = report.findings.filter(f => f.severity === "low");
+
+  return `
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OWASP ZAP Penetration Test Report</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 40px; line-height: 1.6; }
+    .header { border-bottom: 2px solid #333; padding-bottom: 20px; margin-bottom: 30px; }
+    .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 30px; }
+    .stat { background: #f5f5f5; padding: 20px; border-radius: 8px; text-align: center; }
+    .stat.high { border-left: 4px solid #dc3545; }
+    .stat.medium { border-left: 4px solid #ffc107; }
+    .stat.low { border-left: 4px solid #17a2b8; }
+    .stat.info { border-left: 4px solid #6c757d; }
+    .stat-value { font-size: 2em; font-weight: bold; }
+    .stat-label { color: #666; }
+    .finding { border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+    .finding.high { border-left: 4px solid #dc3545; }
+    .finding.medium { border-left: 4px solid #ffc107; }
+    .finding.low { border-left: 4px solid #17a2b8; }
+    .finding.info { border-left: 4px solid #6c757d; }
+    .finding-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .finding-title { font-size: 1.2em; font-weight: bold; }
+    .badge { padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+    .badge.high { background: #dc3545; color: white; }
+    .badge.medium { background: #ffc107; color: #333; }
+    .badge.low { background: #17a2b8; color: white; }
+    .badge.info { background: #6c757d; color: white; }
+    .finding-details { margin-top: 15px; }
+    .detail-row { display: flex; margin-bottom: 8px; }
+    .detail-label { font-weight: bold; min-width: 150px; color: #555; }
+    .detail-value { flex: 1; }
+    pre { background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🔍 OWASP ZAP Penetration Test Report</h1>
+    <p><strong>Target:</strong> ${report.target} | <strong>Generated:</strong> ${report.generatedAt} | <strong>ZAP Version:</strong> ${report.zapVersion} | <strong>Duration:</strong> ${(report.scanDuration / 1000 / 60).toFixed(1)} min</p>
+  </div>
+
+  <div class="summary">
+    <div class="stat high">
+      <div class="stat-value">${report.summary.high}</div>
+      <div class="stat-label">High</div>
+    </div>
+    <div class="stat medium">
+      <div class="stat-value">${report.summary.medium}</div>
+      <div class="stat-label">Medium</div>
+    </div>
+    <div class="stat low">
+      <div class="stat-value">${report.summary.low}</div>
+      <div class="stat-label">Low</div>
+    </div>
+    <div class="stat info">
+      <div class="stat-value">${report.summary.informational}</div>
+      <div class="stat-label">Info</div>
+    </div>
+  </div>
+
+  ${report.findings.length > 0 ? `
+    <h2>Findings (${report.findings.length})</h2>
+    ${report.findings.map(f => `
+      <div class="finding ${f.severity}">
+        <div class="finding-header">
+          <span class="finding-title">${f.name}</span>
+          <span class="badge ${f.severity}">${f.severity.toUpperCase()}</span>
+        </div>
+        <div class="finding-details">
+          <div class="detail-row"><span class="detail-label">Severity:</span><span class="detail-value">${f.severity}</span></div>
+          <div class="detail-row"><span class="detail-label">Confidence:</span><span class="detail-value">${f.confidence}</span></div>
+          <div class="detail-row"><span class="detail-label">URL:</span><span class="detail-value"><a href="${f.url}" target="_blank">${f.url}</a></span></div>
+          ${f.parameter ? `<div class="detail-row"><span class="detail-label">Parameter:</span><span class="detail-value">${f.parameter}</span></div>` : ""}
+          <div class="detail-row"><span class="detail-label">Description:</span><span class="detail-value">${f.description}</span></div>
+          <div class="detail-row"><span class="detail-label">Solution:</span><span class="detail-value">${f.solution}</span></div>
+          ${f.reference ? `<div class="detail-row"><span class="detail-label">Reference:</span><span class="detail-value"><a href="${f.reference}" target="_blank">${f.reference}</a></span></div>` : ""}
+          ${f.cweId ? `<div class="detail-row"><span class="detail-label">CWE:</span><span class="detail-value"><a href="https://cwe.mitre.org/data/definitions/${f.cweId}.html" target="_blank">CWE-${f.cweId}</a></span></div>` : ""}
+        </div>
+      </div>
+    `).join("")}
+  ` : `
+    <div style="text-align: center; padding: 40px; background: #d4edda; border-radius: 8px; color: #155724;">
+      <h2>🎉 No Vulnerabilities Found</h2>
+      <p>The scan completed without detecting any security vulnerabilities.</p>
+    </div>
+  `}
+</body>
+</html>
+`;
+}
+
+// ============================================================================
+// CI INTEGRATION
+// ============================================================================
+
+function evaluateGate(report: ZapReport, failOnSeverity: "high" | "medium" | "low"): { pass: boolean; reason: string } {
+  if (failOnSeverity === "high" && report.summary.high > 0) {
+    return { pass: false, reason: `${report.summary.high} high-severity vulnerabilities found` };
+  }
+  if (failOnSeverity === "medium" && (report.summary.high > 0 || report.summary.medium > 0)) {
+    return { pass: false, reason: `${report.summary.high} high + ${report.summary.medium} medium vulnerabilities found` };
+  }
+  if (failOnSeverity === "low" && (report.summary.high > 0 || report.summary.medium > 0 || report.summary.low > 0)) {
+    return { pass: false, reason: `${report.summary.high + report.summary.medium + report.summary.low} vulnerabilities found` };
+  }
+  return { pass: true, reason: "No findings above threshold" };
+}
+
+// ============================================================================
+// MAIN
+// ============================================================================
+
+async function main() {
+  const args = process.argv.slice(2);
+  const config: ZapConfig = { ...DEFAULT_CONFIG };
+
+  // Parse args
+  for (let i = 0; i < args.length; i++) {
+    switch (args[i]) {
+      case "--target":
+        config.targetUrl = args[++i];
+        break;
+      case "--baseline":
+        config.baselineOnly = true;
+        config.activeScan = false;
+        break;
+      case "--no-active":
+        config.activeScan = false;
+        break;
+      case "--max-duration":
+        config.maxDuration = parseInt(args[++i]);
+        break;
+      case "--fail-on":
+        config.failOnSeverity = args[++i] as "high" | "medium" | "low";
+        break;
+      case "--api-key":
+        config.apiKey = args[++i];
+        break;
+    }
+  }
+
+  console.log("🛡️  ALHUSAINIA Automated Penetration Testing");
+  console.log("=============================================\n");
+
+  try {
+    const report = await runZapScan(config);
+
+    // Save JSON report
+    const jsonPath = resolve(RESULTS_DIR, `zap-report-${Date.now()}.json`);
+    writeFileSync(jsonPath, JSON.stringify(report, null, 2));
+    console.log(`\n📄 JSON report saved to: ${jsonPath}`);
+
+    // Save HTML report
+    const htmlReport = generateHtmlReport(report);
+    const htmlPath = resolve(RESULTS_DIR, `zap-report-${Date.now()}.html`);
+    writeFileSync(htmlPath, htmlReport);
+    console.log(`📄 HTML report saved to: ${htmlPath}`);
+
+    // Print summary
+    console.log("\n📊 Scan Summary:");
+    console.log(`   High: ${report.summary.high}`);
+    console.log(`   Medium: ${report.summary.medium}`);
+    console.log(`   Low: ${report.summary.low}`);
+    console.log(`   Informational: ${report.summary.informational}`);
+    console.log(`   Total Findings: ${report.findings.length}`);
+
+    // Evaluate gate
+    const gate = evaluateGate(report, config.failOnSeverity);
+    console.log(`\n🚦 Quality Gate: ${gate.pass ? "✅ PASSED" : "❌ FAILED"}`);
+    console.log(`   Reason: ${gate.reason}`);
+
+    if (!gate.pass) {
+      console.log("\n🔴 Quality gate FAILED - failing build");
+      process.exit(1);
+    }
+
+    console.log("\n✅ Quality gate PASSED");
+    process.exit(0);
+
+  } catch (error) {
+    console.error("❌ Penetration test failed:", error);
+    process.exit(1);
+  }
+}
+
+main().catch(console.error);

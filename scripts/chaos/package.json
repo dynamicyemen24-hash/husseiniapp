@@ -1,0 +1,22 @@
+{
+  "name": "@alhusseiniya/chaos-engine",
+  "version": "1.0.0",
+  "description": "Chaos engineering engine for ALHUSAINIA platform",
+  "type": "module",
+  "main": "chaos-engine.ts",
+  "scripts": {
+    "run": "tsx chaos-engine.ts",
+    "run:all": "tsx chaos-engine.ts",
+    "run:db-latency": "tsx chaos-engine.ts database-latency-low",
+    "run:db-errors": "tsx chaos-engine.ts database-errors-5%",
+    "run:cache-down": "tsx chaos-engine.ts cache-unavailable",
+    "run:api-latency": "tsx chaos-engine.ts api-latency-spike",
+    "run:db-down": "tsx chaos-engine.ts database-unavailable",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.0",
+    "tsx": "^4.19.0"
+  },
+  "dependencies": {}
+}

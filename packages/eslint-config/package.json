@@ -1,0 +1,27 @@
+{
+  "name": "@alhusseiniya/eslint-config",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "base.js",
+    "react.js",
+    "next.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .js"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-tailwindcss": "^4.4.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://stryker-mutator.io/schema/stryker-schema.json",
+  "mutator": "typescript",
+  "testRunner": "vitest",
+  "reporters": ["html", "clear-text", "progress", "json", "github-actions"],
+  "coverageAnalysis": "perTest",
+  "thresholds": {
+    "high": 80,
+    "low": 70,
+    "break": 60
+  },
+  "files": [
+    "server/_core/rbac.ts",
+    "server/_core/backup.ts",
+    "server/_core/automation.ts",
+    "server/services/doubleEntryValidator.ts",
+    "server/services/inventoryService.ts",
+    "server/services/pricingResolver.ts",
+    "server/services/authService.ts",
+    "server/services/accountingEngine.ts",
+    "shared/financialAnalytics/ratioCalculations.ts",
+    "shared/permissions.ts"
+  ],
+  "mutate": [
+    "server/_core/rbac.ts",
+    "server/_core/backup.ts",
+    "server/_core/automation.ts",
+    "server/services/doubleEntryValidator.ts",
+    "server/services/inventoryService.ts",
+    "server/services/pricingResolver.ts",
+    "server/services/authService.ts",
+    "server/services/accountingEngine.ts",
+    "shared/financialAnalytics/ratioCalculations.ts",
+    "shared/permissions.ts"
+  ],
+  "testRunnerNodeArgs": ["--experimental-vm-modules"],
+  "vitest": {
+    "configFile": "vitest.config.ts",
+    "projectName": "unit"
+  },
+  "timeoutMS": 60000,
+  "timeoutFactor": 2.5,
+  "concurrency": 4,
+  "maxConcurrentTestRunners": 2,
+  "logLevel": "info"
+}

@@ -1,0 +1,117 @@
+{
+  "overview": {
+    "title": "الإشعارات",
+    "subtitle": "إدارة الإشعارات والتنبيهات"
+  },
+  "general": {
+    "title": "الإشعارات",
+    "markAllRead": "تحديد الكل كمقروء",
+    "markRead": "تحديد كمقروء",
+    "markUnread": "تحديد كغير مقروء",
+    "delete": "حذف",
+    "deleteAll": "حذف الكل",
+    "noNotifications": "لا توجد إشعارات",
+    "viewAll": "عرض جميع الإشعارات",
+    "refresh": "تحديث",
+    "loading": "جاري التحميل..."
+  },
+  "types": {
+    "info": "معلومات",
+    "success": "نجاح",
+    "warning": "تحذير",
+    "error": "خطأ",
+    "approval": "موافقة مطلوبة",
+    "reminder": "تذكير",
+    "system": "نظام",
+    "security": "أمان"
+  },
+  "channels": {
+    "inApp": "داخل التطبيق",
+    "email": "البريد الإلكتروني",
+    "sms": "الرسائل النصية",
+    "push": "الإشعارات الفورية",
+    "webhook": "Webhook"
+  },
+  "list": {
+    "title": "قائمة الإشعارات",
+    "all": "الكل",
+    "unread": "غير مقروءة",
+    "read": "مقروءة",
+    "archived": "مؤرشفة",
+    "filter": "تصفية",
+    "search": "بحث في الإشعارات...",
+    "date": "التاريخ",
+    "type": "النوع",
+    "subject": "الموضوع",
+    "message": "الرسالة",
+    "priority": "الأولوية",
+    "priorities": {
+      "low": "منخفضة",
+      "normal": "عادية",
+      "high": "عالية",
+      "urgent": "عاجلة"
+    },
+    "actions": {
+      "view": "عرض",
+      "approve": "اعتماد",
+      "reject": "رفض",
+      "dismiss": "تجاهل",
+      "snooze": "تأجيل"
+    }
+  },
+  "detail": {
+    "title": "تفاصيل الإشعار",
+    "subject": "الموضوع",
+    "message": "الرسالة",
+    "sender": "المرسل",
+    "recipient": "المستلم",
+    "sentAt": "وقت الإرسال",
+    "readAt": "وقت القراءة",
+    "relatedEntity": "الكيان المرتبط",
+    "entityType": "نوع الكيان",
+    "entityId": "معرف الكيان",
+    "actionUrl": "رابط الإجراء",
+    "attachments": "المرفقات"
+  },
+  "preferences": {
+    "title": "تفضيلات الإشعارات",
+    "enableEmail": "تمكين إشعارات البريد الإلكتروني",
+    "enableSms": "تمكين إشعارات الرسائل النصية",
+    "enablePush": "تمكين الإشعارات الفورية",
+    "enableInApp": "تمكين الإشعارات داخل التطبيق",
+    "categories": "الفئات",
+    "frequency": "التكرار",
+    "frequencies": {
+      "immediate": "فوري",
+      "hourly": "ساعي",
+      "daily": "يومي",
+      "weekly": "أسبوعي",
+      "never": "أبداً"
+    },
+    "quietHours": "ساعات الهدوء",
+    "quietStart": "بداية الهدوء",
+    "quietEnd": "نهاية الهدوء"
+  },
+  "templates": {
+    "title": "قوالب الإشعارات",
+    "create": "إنشاء قالب",
+    "edit": "تعديل القالب",
+    "list": "قائمة القوالب",
+    "name": "اسم القالب",
+    "subject": "الموضوع",
+    "body": "المحتوى",
+    "channel": "القناة",
+    "variables": "المتغيرات",
+    "preview": "معاينة",
+    "test": "اختبار"
+  },
+  "automation": {
+    "title": "إشعارات تلقائية",
+    "triggers": "المحفزات",
+    "conditions": "الشروط",
+    "actions": "الإجراءات",
+    "isActive": "نشط",
+    "lastTriggered": "آخر تفعيل",
+    "triggerCount": "عدد مرات التفعيل"
+  }
+}

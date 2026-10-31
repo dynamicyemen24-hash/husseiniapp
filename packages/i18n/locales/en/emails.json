@@ -1,0 +1,130 @@
+{
+  "overview": {
+    "title": "Emails",
+    "subtitle": "Email templates and settings"
+  },
+  "general": {
+    "title": "Emails",
+    "send": "Send",
+    "sendTest": "Send Test",
+    "preview": "Preview",
+    "templates": "Templates",
+    "settings": "Settings",
+    "logs": "Logs",
+    "queue": "Send Queue"
+  },
+  "templates": {
+    "title": "Email Templates",
+    "create": "Create Template",
+    "edit": "Edit Template",
+    "list": "Template List",
+    "name": "Template Name",
+    "subject": "Subject",
+    "body": "Body",
+    "bodyText": "Text Body",
+    "bodyHtml": "HTML Body",
+    "category": "Category",
+    "categories": {
+      "welcome": "Welcome",
+      "verification": "Verification",
+      "passwordReset": "Password Reset",
+      "invoice": "Invoice",
+      "payment": "Payment",
+      "order": "Order",
+      "shipment": "Shipment",
+      "notification": "Notification",
+      "report": "Report",
+      "system": "System",
+      "marketing": "Marketing",
+      "custom": "Custom"
+    },
+    "variables": "Variables",
+    "variablesList": "Available Variables",
+    "preview": "Preview",
+    "sendTest": "Send Test",
+    "isActive": "Active",
+    "isSystem": "System"
+  },
+  "settings": {
+    "title": "Email Settings",
+    "provider": "Provider",
+    "providers": {
+      "smtp": "SMTP",
+      "sendgrid": "SendGrid",
+      "mailgun": "Mailgun",
+      "ses": "AWS SES",
+      "postmark": "Postmark",
+      "console": "Console (Development)"
+    },
+    "host": "Host",
+    "port": "Port",
+    "username": "Username",
+    "password": "Password",
+    "encryption": "Encryption",
+    "encryptionTypes": {
+      "none": "None",
+      "ssl": "SSL",
+      "tls": "TLS",
+      "starttls": "STARTTLS"
+    },
+    "fromEmail": "From Email",
+    "fromName": "From Name",
+    "replyTo": "Reply To",
+    "testEmail": "Test Email",
+    "sendTest": "Send Test Email"
+  },
+  "logs": {
+    "title": "Email Logs",
+    "date": "Date",
+    "to": "To",
+    "subject": "Subject",
+    "status": "Status",
+    "statuses": {
+      "pending": "Pending",
+      "sent": "Sent",
+      "failed": "Failed",
+      "bounced": "Bounced",
+      "opened": "Opened",
+      "clicked": "Clicked"
+    },
+    "error": "Error",
+    "retryCount": "Retry Count",
+    "provider": "Provider",
+    "messageId": "Message ID",
+    "filter": "Filter",
+    "dateRange": "Date Range"
+  },
+  "queue": {
+    "title": "Send Queue",
+    "pending": "Pending",
+    "processing": "Processing",
+    "completed": "Completed",
+    "failed": "Failed",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "clearCompleted": "Clear Completed",
+    "clearFailed": "Clear Failed"
+  },
+  "common": {
+    "welcome": {
+      "subject": "Welcome to {{companyName}}",
+      "body": "Dear {{userName}},\n\nWelcome to {{companyName}}! We're excited to have you on board.\n\nYou can now log in and start using the platform.\n\nBest regards,\nThe {{companyName}} Team"
+    },
+    "verification": {
+      "subject": "Verify Your Email",
+      "body": "Dear {{userName}},\n\nPlease verify your email address using the code below:\n\n{{code}}\n\nThis code is valid for {{expiryMinutes}} minutes.\n\nBest regards,\nThe {{companyName}} Team"
+    },
+    "passwordReset": {
+      "subject": "Reset Your Password",
+      "body": "Dear {{userName}},\n\nWe received a request to reset your password.\n\nClick the link below to create a new password:\n\n{{resetLink}}\n\nThis link is valid for {{expiryHours}} hours.\n\nIf you didn't request this, please ignore this email.\n\nBest regards,\nThe {{companyName}} Team"
+    },
+    "invoice": {
+      "subject": "Invoice {{invoiceNumber}} from {{companyName}}",
+      "body": "Dear {{customerName}},\n\nPlease find attached your invoice {{invoiceNumber}} dated {{date}}.\n\nTotal Amount: {{amount}} {{currency}}\n\nPlease pay by the due date: {{dueDate}}\n\nBest regards,\nThe {{companyName}} Team"
+    },
+    "paymentReceived": {
+      "subject": "Payment Received - {{reference}}",
+      "body": "Dear {{customerName}},\n\nThank you for your payment of {{amount}} {{currency}}.\n\nReference: {{reference}}\nDate: {{date}}\n\nBest regards,\nThe {{companyName}} Team"
+    }
+  }
+}

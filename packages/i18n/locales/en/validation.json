@@ -1,0 +1,99 @@
+{
+  "overview": {
+    "title": "Validation",
+    "subtitle": "Data validation rules and messages"
+  },
+  "fields": {
+    "required": "This field is required",
+    "email": "Invalid email address",
+    "phone": "Invalid phone number",
+    "phoneSA": "Invalid Saudi phone number",
+    "phoneYE": "Invalid Yemeni phone number",
+    "mobile": "Invalid mobile number",
+    "url": "Invalid URL",
+    "date": "Invalid date",
+    "time": "Invalid time",
+    "datetime": "Invalid date and time",
+    "number": "Must be a number",
+    "integer": "Must be an integer",
+    "positive": "Must be a positive number",
+    "negative": "Must be a negative number",
+    "decimal": "Must be a decimal number",
+    "min": "Must be greater than or equal to {{min}}",
+    "max": "Must be less than or equal to {{max}}",
+    "minLength": "Must be at least {{count}} characters",
+    "maxLength": "Must not exceed {{count}} characters",
+    "exactLength": "Must be exactly {{count}} characters",
+    "pattern": "Invalid format",
+    "alpha": "Must contain only letters",
+    "alphanumeric": "Must contain only letters and numbers",
+    "numeric": "Must contain only numbers",
+    "slug": "Invalid slug format",
+    "uuid": "Invalid UUID",
+    "json": "Invalid JSON",
+    "ip": "Invalid IP address",
+    "mac": "Invalid MAC address",
+    "iban": "Invalid IBAN",
+    "swift": "Invalid SWIFT code",
+    "creditCard": "Invalid credit card number",
+    "vatNumber": "Invalid VAT number",
+    "commercialRegister": "Invalid commercial register",
+    "nationalId": "Invalid national ID",
+    "passport": "Invalid passport number"
+  },
+  "passwords": {
+    "minLength": "Password must be at least {{count}} characters",
+    "requireUppercase": "Must contain at least one uppercase letter",
+    "requireLowercase": "Must contain at least one lowercase letter",
+    "requireNumbers": "Must contain at least one number",
+    "requireSymbols": "Must contain at least one symbol",
+    "noSpaces": "Must not contain spaces",
+    "notCommon": "Password is too common",
+    "notPersonalInfo": "Must not contain personal information",
+    "mismatch": "Passwords do not match",
+    "reused": "Cannot reuse a previous password"
+  },
+  "files": {
+    "required": "A file is required",
+    "maxSize": "File size must not exceed {{size}}",
+    "allowedTypes": "File type not allowed, allowed types: {{types}}",
+    "imageOnly": "Must be an image file",
+    "documentOnly": "Must be a document file",
+    "dimensions": "Image dimensions must be at least {{width}}x{{height}}",
+    "maxDimensions": "Image dimensions must not exceed {{width}}x{{height}}",
+    "aspectRatio": "Aspect ratio must be {{ratio}}"
+  },
+  "arrays": {
+    "required": "At least one item must be selected",
+    "minItems": "At least {{count}} items must be selected",
+    "maxItems": "At most {{count}} items can be selected",
+    "unique": "Duplicate values are not allowed",
+    "itemValidation": "Item {{index}}: {{message}}"
+  },
+  "objects": {
+    "required": "This object is required",
+    "unknownKeys": "Unknown fields: {{keys}}",
+    "missingKeys": "Missing fields: {{keys}}"
+  },
+  "business": {
+    "duplicateCode": "This code is already in use",
+    "duplicateName": "This name is already in use",
+    "duplicateEmail": "This email is already registered",
+    "duplicatePhone": "This phone number is already in use",
+    "duplicateTaxNumber": "This tax number is already registered",
+    "duplicateCommercialRegister": "This commercial register is already registered",
+    "codeFormat": "Invalid code format",
+    "codeReserved": "This code is reserved",
+    "nameReserved": "This name is reserved",
+    "invalidState": "Invalid state for operation",
+    "insufficientPermissions": "Insufficient permissions",
+    "circularReference": "Circular reference not allowed",
+    "selfReference": "Cannot reference self"
+  },
+  "messages": {
+    "fixErrors": "Please fix the following errors",
+    "checkRequired": "Check required fields",
+    "validFormat": "Please enter a valid format",
+    "withinRange": "Value must be within allowed range"
+  }
+}

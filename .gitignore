@@ -1,0 +1,116 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs & debug artifacts
+*.log
+.manus-logs/
+npm-debug.log*
+pnpm-debug.log*
+ts-err6.txt
+*.tmp
+lint-*.txt
+esbuild-output.txt
+test-output.txt
+lint-output.txt
+build-output.txt
+temp/
+
+# Test coverage output
+coverage/
+
+# Wrong lockfile for a pnpm workspace (pnpm-lock.yaml is canonical)
+package-lock.json
+
+# Vercel project link (machine-specific). The non-secret project ID/org ID is
+# committed so CI can `vercel pull`/`vercel deploy --prebuilt --prod`.
+.vercel/*
+!.vercel/project.json
+client/.vercel/
+
+# Manus auto-generated version file
+client/public/__manus__/version.json
+
+# OS & editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Secrets & local copies
+BACKUP_ENCRYPTION_KEY_LOCAL_COPY.txt
+.git-commit-msg.txt
+
+# JWT ES256 key material (auto-generated; set env vars in prod)
+.keys/
+
+# Transient diagnostic outputs (db probes / migration tests)
+addcols.txt
+db-check-out.txt
+migrate-test.txt
+test-run.err
+*-out.txt
+probe-*.txt
+
+# Nuclear probe leftovers (never commit)
+_*.mjs
+_*.cjs
+_tmp/
+_migration_backup/
+.parity.err
+.parity.out
+
+# Root-level migration/diagnostic scripts (moved to scripts/)
+check-db.mjs
+apply-migration.mjs
+apply-migration-v2.mjs
+verify-reports.mjs
+verify-migration.mjs
+verify-migration-v2.mjs
+verify-migration-v3.mjs
+add-constraints.mjs
+add-columns.mjs
+create-fiscal-periods.mjs
+final-verify.mjs
+
+# k6 load-testing binaries, zips and runtime session artifacts
+k6/
+k6.zip
+cookies.txt
+current-token.txt
+
+# Temporary files
+*.log
+*.tmp
+b.txt
+c.txt
+t.txt
+_*.tmp.cjs
+_dbprobe*.cjs
+
+# Local agent-mission state (machine-specific, never commit)
+mission.json
+mission.json.bak
+.mission.json.*.tmp
+checkpoints/
+
+# Playwright artifacts
+test-results/
+playwright-report/
+blob-report/
+!.env.example
+
+# GSEE local state
+.gsee/

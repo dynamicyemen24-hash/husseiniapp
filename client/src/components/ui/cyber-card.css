@@ -1,0 +1,186 @@
+/**
+ * CYBER CARD — the sector-aware pulse-glow applied to the existing Card/Stat
+ * primitives.
+ *
+ * The effect is two pseudo-elements, so every existing surface that opts in
+ * with the `cyber` prop gets the behaviour without changing its markup:
+ *   ::before — the breathing radial aura,
+ *   ::after  — the static inset sheen.
+ *
+ * The active sector supplies `--sector-accent` / `--sector-accent-alt` from
+ * IndustryProvider. Cards alternate the two hues and start from four different
+ * corners, so a row reads as a set of surfaces rather than one animated banner.
+ *
+ * The glow never moves layout or captures a pointer event: both layers sit at
+ * z-index -1 inside an isolated stacking context.
+ */
+
+.cyber-card {
+  --cyber-accent: var(--sector-accent, var(--t-brand));
+  --cyber-accent-alt: var(--sector-accent-alt, var(--t-info));
+  --cyber-origin-x: 14%;
+  --cyber-origin-y: 0%;
+  --cyber-delay: 0ms;
+  --cyber-pulse-min: 0.16;
+  --cyber-pulse-max: 0.46;
+
+  position: relative;
+  isolation: isolate;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.04);
+  transition:
+    border-color 240ms ease,
+    box-shadow 240ms ease;
+}
+
+/*
+ * `.surface-card` is a Tailwind utility whose border shorthand may be emitted
+ * after this component CSS. The extra class keeps the sector tint winning
+ * regardless of bundle order.
+ */
+.cyber-card.surface-card {
+  border-color: color-mix(in srgb, var(--cyber-accent) 22%, var(--t-hairline));
+}
+
+.cyber-card::before,
+.cyber-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.cyber-card::before {
+  background:
+    radial-gradient(
+      circle at var(--cyber-origin-x) var(--cyber-origin-y),
+      color-mix(in srgb, var(--cyber-accent) 22%, transparent) 0%,
+      transparent 44%
+    ),
+    radial-gradient(
+      circle at calc(100% - var(--cyber-origin-x)) calc(100% - var(--cyber-origin-y)),
+      color-mix(in srgb, var(--cyber-accent-alt) 16%, transparent) 0%,
+      transparent 48%
+    );
+  box-shadow: 0 0 26px -8px color-mix(in srgb, var(--cyber-accent) 36%, transparent);
+  opacity: var(--cyber-pulse-min);
+  animation: cyber-card-pulse 7.5s ease-in-out var(--cyber-delay) infinite;
+  transition: opacity 260ms ease;
+}
+
+.cyber-card::after {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--cyber-accent) 14%, transparent);
+  opacity: 0.65;
+  transition:
+    opacity 240ms ease,
+    box-shadow 240ms ease;
+}
+
+/* Four starting corners and four stagger offsets, cycling with the grid. */
+.cyber-card:nth-child(4n + 2) {
+  --cyber-origin-x: 86%;
+  --cyber-origin-y: 0%;
+  --cyber-delay: 140ms;
+}
+
+.cyber-card:nth-child(4n + 3) {
+  --cyber-origin-x: 18%;
+  --cyber-origin-y: 100%;
+  --cyber-delay: 280ms;
+}
+
+.cyber-card:nth-child(4n) {
+  --cyber-origin-x: 82%;
+  --cyber-origin-y: 100%;
+  --cyber-delay: 420ms;
+}
+
+/* Every second card carries the sector's secondary hue. */
+.cyber-card:nth-child(even) {
+  --cyber-accent: var(--sector-accent-alt, var(--t-info));
+  --cyber-accent-alt: var(--sector-accent, var(--t-brand));
+}
+
+@keyframes cyber-card-pulse {
+  0%,
+  100% {
+    opacity: var(--cyber-pulse-min);
+  }
+  48% {
+    opacity: var(--cyber-pulse-max);
+  }
+}
+
+.cyber-card:hover,
+.cyber-card:focus-within,
+.cyber-card:focus-visible {
+  --cyber-pulse-min: 0.3;
+  --cyber-pulse-max: 0.68;
+
+  border-color: color-mix(in srgb, var(--cyber-accent) 56%, var(--t-hairline));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--cyber-accent) 16%, transparent),
+    0 14px 34px -18px color-mix(in srgb, var(--cyber-accent) 68%, transparent);
+}
+
+.cyber-card:hover::after,
+.cyber-card:focus-within::after,
+.cyber-card:focus-visible::after {
+  opacity: 1;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--cyber-accent) 32%, transparent);
+}
+
+.cyber-card:focus-visible {
+  /*
+   * Blend toward the theme's ink rather than toward transparency: the focus
+   * ring must clear its own contrast threshold on every theme, while still
+   * carrying the sector hue. A 72%-alpha accent disappears on a dark canvas
+   * when the sector itself is deep.
+   */
+  outline: 2px solid color-mix(in srgb, var(--cyber-accent) 62%, var(--t-ink));
+  outline-offset: 2px;
+}
+
+/*
+ * Motion is decorative. A reduced-motion user keeps the sector colour and the
+ * static sheen, but not the breathing. `!important` is required because the
+ * global reduced-motion reset shortens animation duration without cancelling
+ * the iteration.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .cyber-card,
+  .cyber-card::after {
+    transition: none;
+  }
+
+  .cyber-card::before {
+    animation: none !important;
+    opacity: 0.28;
+  }
+}
+
+/* High contrast cannot spend contrast budget on decoration. */
+[data-theme="high_contrast"] .cyber-card {
+  border-color: var(--t-hairline);
+  box-shadow: none;
+}
+
+[data-theme="high_contrast"] .cyber-card::before,
+[data-theme="high_contrast"] .cyber-card::after {
+  display: none;
+}
+
+@media (forced-colors: active) {
+  .cyber-card::before,
+  .cyber-card::after {
+    display: none;
+  }
+}
+
+@media print {
+  .cyber-card::before,
+  .cyber-card::after {
+    display: none;
+  }
+}

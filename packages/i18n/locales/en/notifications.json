@@ -1,0 +1,117 @@
+{
+  "overview": {
+    "title": "Notifications",
+    "subtitle": "Manage notifications and alerts"
+  },
+  "general": {
+    "title": "Notifications",
+    "markAllRead": "Mark All as Read",
+    "markRead": "Mark as Read",
+    "markUnread": "Mark as Unread",
+    "delete": "Delete",
+    "deleteAll": "Delete All",
+    "noNotifications": "No notifications",
+    "viewAll": "View All Notifications",
+    "refresh": "Refresh",
+    "loading": "Loading..."
+  },
+  "types": {
+    "info": "Info",
+    "success": "Success",
+    "warning": "Warning",
+    "error": "Error",
+    "approval": "Approval Required",
+    "reminder": "Reminder",
+    "system": "System",
+    "security": "Security"
+  },
+  "channels": {
+    "inApp": "In-App",
+    "email": "Email",
+    "sms": "SMS",
+    "push": "Push",
+    "webhook": "Webhook"
+  },
+  "list": {
+    "title": "Notification List",
+    "all": "All",
+    "unread": "Unread",
+    "read": "Read",
+    "archived": "Archived",
+    "filter": "Filter",
+    "search": "Search notifications...",
+    "date": "Date",
+    "type": "Type",
+    "subject": "Subject",
+    "message": "Message",
+    "priority": "Priority",
+    "priorities": {
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "actions": {
+      "view": "View",
+      "approve": "Approve",
+      "reject": "Reject",
+      "dismiss": "Dismiss",
+      "snooze": "Snooze"
+    }
+  },
+  "detail": {
+    "title": "Notification Details",
+    "subject": "Subject",
+    "message": "Message",
+    "sender": "Sender",
+    "recipient": "Recipient",
+    "sentAt": "Sent At",
+    "readAt": "Read At",
+    "relatedEntity": "Related Entity",
+    "entityType": "Entity Type",
+    "entityId": "Entity ID",
+    "actionUrl": "Action URL",
+    "attachments": "Attachments"
+  },
+  "preferences": {
+    "title": "Notification Preferences",
+    "enableEmail": "Enable Email Notifications",
+    "enableSms": "Enable SMS Notifications",
+    "enablePush": "Enable Push Notifications",
+    "enableInApp": "Enable In-App Notifications",
+    "categories": "Categories",
+    "frequency": "Frequency",
+    "frequencies": {
+      "immediate": "Immediate",
+      "hourly": "Hourly",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "never": "Never"
+    },
+    "quietHours": "Quiet Hours",
+    "quietStart": "Quiet Start",
+    "quietEnd": "Quiet End"
+  },
+  "templates": {
+    "title": "Notification Templates",
+    "create": "Create Template",
+    "edit": "Edit Template",
+    "list": "Template List",
+    "name": "Template Name",
+    "subject": "Subject",
+    "body": "Body",
+    "channel": "Channel",
+    "variables": "Variables",
+    "preview": "Preview",
+    "test": "Test"
+  },
+  "automation": {
+    "title": "Automated Notifications",
+    "triggers": "Triggers",
+    "conditions": "Conditions",
+    "actions": "Actions",
+    "isActive": "Active",
+    "lastTriggered": "Last Triggered",
+    "triggerCount": "Trigger Count"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "defaultVersion": "2025-01-01",
+  "versions": {
+    "2024-01-01": {
+      "version": "2024-01-01",
+      "status": "deprecated",
+      "releasedAt": "2024-01-01",
+      "deprecation": {
+        "announcedAt": "2024-10-01",
+        "sunsetAt": "2025-04-01",
+        "replacement": "2025-01-01",
+        "migrationGuide": "https://docs.alhusseiniya.com/migration/2024-to-2025",
+        "message": "Version 2024-01-01 will be removed on 2025-04-01. Please migrate to 2025-01-01."
+      },
+      "changelog": ["Initial stable release"]
+    },
+    "2024-06-15": {
+      "version": "2024-06-15",
+      "status": "deprecated",
+      "releasedAt": "2024-06-15",
+      "deprecation": {
+        "announcedAt": "2024-12-01",
+        "sunsetAt": "2025-06-15",
+        "replacement": "2025-01-01",
+        "migrationGuide": "https://docs.alhusseiniya.com/migration/2024-june-to-2025",
+        "message": "Version 2024-06-15 will be removed on 2025-06-15. Please migrate to 2025-01-01."
+      },
+      "changelog": ["Added advanced reporting", "Improved inventory tracking"]
+    },
+    "2025-01-01": {
+      "version": "2025-01-01",
+      "status": "active",
+      "releasedAt": "2025-01-01",
+      "changelog": ["New pricing engine", "Enhanced security", "Breaking changes in auth"]
+    },
+    "2025-07-01": {
+      "version": "2025-07-01",
+      "status": "active",
+      "releasedAt": "2025-07-01",
+      "changelog": ["AI-powered insights", "Real-time notifications", "GraphQL support"]
+    }
+  },
+  "versionHeader": "accept-version",
+  "clientHeader": "x-client-version",
+  "negotiate": true,
+  "strict": false
+}

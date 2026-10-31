@@ -1,0 +1,134 @@
+{
+  "overview": {
+    "title": "Workflow",
+    "subtitle": "Manage approvals, automation, and process templates"
+  },
+  "approvals": {
+    "title": "Approvals",
+    "myApprovals": "My Approvals",
+    "pending": "Pending Approvals",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "delegated": "Delegated",
+    "requestApproval": "Request Approval",
+    "approve": "Approve",
+    "reject": "Reject",
+    "delegate": "Delegate",
+    "comment": "Comment",
+    "required": "Approval Required",
+    "optional": "Approval Optional",
+    "status": "Status",
+    "statuses": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "delegated": "Delegated",
+      "expired": "Expired"
+    },
+    "levels": "Approval Levels",
+    "currentLevel": "Current Level",
+    "nextApprover": "Next Approver",
+    "finalApproval": "Final Approval"
+  },
+  "workflows": {
+    "title": "Workflows",
+    "create": "Create Workflow",
+    "edit": "Edit Workflow",
+    "list": "Workflow List",
+    "name": "Workflow Name",
+    "description": "Description",
+    "trigger": "Trigger",
+    "triggers": {
+      "manual": "Manual",
+      "onCreate": "On Create",
+      "onUpdate": "On Update",
+      "onStatusChange": "On Status Change",
+      "scheduled": "Scheduled"
+    },
+    "steps": "Steps",
+    "step": "Step",
+    "stepName": "Step Name",
+    "stepType": "Step Type",
+    "stepTypes": {
+      "approval": "Approval",
+      "notification": "Notification",
+      "task": "Task",
+      "condition": "Condition",
+      "parallel": "Parallel",
+      "script": "Script"
+    },
+    "assignee": "Assignee",
+    "role": "Role",
+    "condition": "Condition",
+    "isActive": "Active",
+    "version": "Version"
+  },
+  "templates": {
+    "title": "Workflow Templates",
+    "create": "Create Template",
+    "edit": "Edit Template",
+    "list": "Template List",
+    "name": "Template Name",
+    "category": "Category",
+    "description": "Description",
+    "isSystem": "System",
+    "usageCount": "Usage Count"
+  },
+  "automation": {
+    "title": "Automation",
+    "create": "Create Automation Rule",
+    "edit": "Edit Rule",
+    "list": "Automation Rules",
+    "name": "Rule Name",
+    "trigger": "Trigger",
+    "action": "Action",
+    "actions": {
+      "sendEmail": "Send Email",
+      "createTask": "Create Task",
+      "updateField": "Update Field",
+      "createRecord": "Create Record",
+      "webhook": "Call Webhook",
+      "runScript": "Run Script"
+    },
+    "conditions": "Conditions",
+    "isActive": "Active",
+    "runCount": "Run Count",
+    "lastRun": "Last Run"
+  },
+  "tasks": {
+    "title": "Tasks",
+    "create": "Create Task",
+    "edit": "Edit Task",
+    "list": "Task List",
+    "title": "Task Title",
+    "description": "Description",
+    "assignee": "Assignee",
+    "dueDate": "Due Date",
+    "priority": "Priority",
+    "priorities": {
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "status": "Status",
+    "statuses": {
+      "todo": "To Do",
+      "inProgress": "In Progress",
+      "review": "Under Review",
+      "done": "Done",
+      "cancelled": "Cancelled"
+    },
+    "relatedTo": "Related To",
+    "comments": "Comments"
+  },
+  "notifications": {
+    "title": "Workflow Notifications",
+    "email": "Email",
+    "inApp": "In-App",
+    "sms": "SMS",
+    "push": "Push",
+    "template": "Notification Template",
+    "recipients": "Recipients"
+  }
+}

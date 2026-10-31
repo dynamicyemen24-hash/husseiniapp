@@ -1,0 +1,62 @@
+[
+  {
+    "experiment": "database-latency-low",
+    "status": "error",
+    "duration": 0,
+    "steadyStateBefore": false,
+    "steadyStateAfter": false,
+    "successCriteriaMet": false,
+    "error": "Pre-condition failed: system not in steady state",
+    "metrics": {}
+  },
+  {
+    "experiment": "database-latency-high",
+    "status": "error",
+    "duration": 0,
+    "steadyStateBefore": false,
+    "steadyStateAfter": false,
+    "successCriteriaMet": false,
+    "error": "Pre-condition failed: system not in steady state",
+    "metrics": {}
+  },
+  {
+    "experiment": "database-errors-5%",
+    "status": "error",
+    "duration": 0,
+    "steadyStateBefore": false,
+    "steadyStateAfter": false,
+    "successCriteriaMet": false,
+    "error": "Pre-condition failed: system not in steady state",
+    "metrics": {}
+  },
+  {
+    "experiment": "cache-unavailable",
+    "status": "error",
+    "duration": 0,
+    "steadyStateBefore": false,
+    "steadyStateAfter": false,
+    "successCriteriaMet": false,
+    "error": "Pre-condition failed: system not in steady state",
+    "metrics": {}
+  },
+  {
+    "experiment": "api-latency-spike",
+    "status": "error",
+    "duration": 0,
+    "steadyStateBefore": false,
+    "steadyStateAfter": false,
+    "successCriteriaMet": false,
+    "error": "Pre-condition failed: system not in steady state",
+    "metrics": {}
+  },
+  {
+    "experiment": "database-unavailable",
+    "status": "error",
+    "duration": 0,
+    "steadyStateBefore": false,
+    "steadyStateAfter": false,
+    "successCriteriaMet": false,
+    "error": "Pre-condition failed: system not in steady state",
+    "metrics": {}
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "Tajawal": {
+    "400": {
+      "sources": [
+        "/fonts/tajawal-arabic-400-normal.woff2",
+        "/fonts/tajawal-latin-400-normal.woff2"
+      ]
+    },
+    "500": {
+      "sources": [
+        "/fonts/tajawal-arabic-500-normal.woff2",
+        "/fonts/tajawal-latin-500-normal.woff2"
+      ]
+    },
+    "700": {
+      "sources": [
+        "/fonts/tajawal-arabic-700-normal.woff2",
+        "/fonts/tajawal-latin-700-normal.woff2"
+      ]
+    },
+    "800": {
+      "sources": [
+        "/fonts/tajawal-arabic-800-normal.woff2",
+        "/fonts/tajawal-latin-800-normal.woff2"
+      ]
+    },
+    "900": {
+      "sources": [
+        "/fonts/tajawal-arabic-900-normal.woff2",
+        "/fonts/tajawal-latin-900-normal.woff2"
+      ]
+    }
+  },
+  "IBM Plex Sans Arabic": {
+    "300": {
+      "sources": [
+        "/fonts/ibm-plex-sans-arabic-arabic-300-normal.woff2",
+        "/fonts/ibm-plex-sans-arabic-latin-300-normal.woff2"
+      ]
+    },
+    "400": {
+      "sources": [
+        "/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2",
+        "/fonts/ibm-plex-sans-arabic-latin-400-normal.woff2"
+      ]
+    },
+    "500": {
+      "sources": [
+        "/fonts/ibm-plex-sans-arabic-arabic-500-normal.woff2",
+        "/fonts/ibm-plex-sans-arabic-latin-500-normal.woff2"
+      ]
+    },
+    "600": {
+      "sources": [
+        "/fonts/ibm-plex-sans-arabic-arabic-600-normal.woff2",
+        "/fonts/ibm-plex-sans-arabic-latin-600-normal.woff2"
+      ]
+    },
+    "700": {
+      "sources": [
+        "/fonts/ibm-plex-sans-arabic-arabic-700-normal.woff2",
+        "/fonts/ibm-plex-sans-arabic-latin-700-normal.woff2"
+      ]
+    }
+  }
+}

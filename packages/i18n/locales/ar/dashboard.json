@@ -1,0 +1,70 @@
+{
+  "overview": {
+    "title": "نظرة عامة على لوحة التحكم",
+    "welcome": "مرحباً، {{name}}",
+    "lastLogin": "آخر دخول: {{date}}",
+    "quickStats": "إحصائيات سريعة"
+  },
+  "widgets": {
+    "totalSales": "إجمالي المبيعات",
+    "totalPurchases": "إجمالي المشتريات",
+    "totalInventory": "إجمالي المخزون",
+    "totalReceivables": "إجمالي الذمم المدينة",
+    "totalPayables": "إجمالي الذمم الدائنة",
+    "cashFlow": "التدفق النقدي",
+    "pendingApprovals": "موافقات معلقة",
+    "lowStockItems": "منتجات منخفضة المخزون",
+    "overdueInvoices": "فواتير متأخرة",
+    "activeEmployees": "الموظفون النشطون",
+    "upcomingLeave": "إجازات قادمة",
+    "openPositions": "مناصب شاغرة"
+  },
+  "charts": {
+    "salesTrend": "اتجاه المبيعات",
+    "revenueByMonth": "الإيرادات حسب الشهر",
+    "topProducts": "أفضل المنتجات مبيعاً",
+    "topCustomers": "أفضل العملاء",
+    "inventoryValue": "قيمة المخزون",
+    "expenseBreakdown": "توزيع المصروفات",
+    "cashFlowTrend": "اتجاه التدفق النقدي",
+    "profitMargin": "هامش الربح"
+  },
+  "recentActivity": {
+    "title": "النشاط الأخير",
+    "viewAll": "عرض الكل",
+    "noActivity": "لا يوجد نشاط حديث",
+    "saleCreated": "تم إنشاء فاتورة مبيعات",
+    "purchaseCreated": "تم إنشاء أمر شراء",
+    "paymentReceived": "تم استلام دفعة",
+    "paymentMade": "تم سداد دفعة",
+    "stockAdjusted": "تم تعديل مخزون",
+    "employeeAdded": "تم إضافة موظف",
+    "approvalRequested": "طُلب موافقة",
+    "approvalCompleted": "اكتملت موافقة"
+  },
+  "quickActions": {
+    "title": "إجراءات سريعة",
+    "newSale": "فاتورة مبيعات جديدة",
+    "newPurchase": "أمر شراء جديد",
+    "newJournalEntry": "قيد محاسبي جديد",
+    "newEmployee": "موظف جديد",
+    "newProduct": "منتج جديد",
+    "recordPayment": "تسديد دفعة",
+    "stockTake": "جرد المخزون",
+    "runPayroll": "تشغيل كشوف المرتبات"
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "markAllRead": "تحديد الكل كمقروء",
+    "noNotifications": "لا توجد إشعارات",
+    "viewAll": "عرض جميع الإشعارات"
+  },
+  "shortcuts": {
+    "title": "اختصارات",
+    "keyboardShortcuts": "اختصارات لوحة المفاتيح",
+    "newInvoice": "ف + ج: فاتورة جديدة",
+    "newCustomer": "ع + ج: عميل جديد",
+    "search": "/: بحث شامل",
+    "help": "؟: مساعدة"
+  }
+}

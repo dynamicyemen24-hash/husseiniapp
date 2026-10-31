@@ -1,0 +1,145 @@
+{
+  "overview": {
+    "title": "Inventory",
+    "subtitle": "Manage products, warehouses, and stock movements"
+  },
+  "products": {
+    "title": "Products",
+    "create": "Add Product",
+    "edit": "Edit Product",
+    "view": "View Product",
+    "list": "Product List",
+    "name": "Product Name",
+    "code": "Product Code",
+    "barcode": "Barcode",
+    "description": "Description",
+    "category": "Category",
+    "brand": "Brand",
+    "unit": "Base Unit",
+    "units": "Units",
+    "costPrice": "Cost Price",
+    "salePrice": "Sale Price",
+    "minPrice": "Min Price",
+    "maxPrice": "Max Price",
+    "trackStock": "Track Stock",
+    "trackSerial": "Track Serial Numbers",
+    "trackBatch": "Track Batches",
+    "expiryDate": "Expiry Date",
+    "reorderPoint": "Reorder Point",
+    "maxStock": "Max Stock",
+    "weight": "Weight",
+    "dimensions": "Dimensions",
+    "image": "Image",
+    "isActive": "Active",
+    "isService": "Service",
+    "variants": "Variants",
+    "attributes": "Attributes"
+  },
+  "categories": {
+    "title": "Categories",
+    "create": "Add Category",
+    "edit": "Edit Category",
+    "list": "Category List",
+    "name": "Category Name",
+    "parent": "Parent Category",
+    "description": "Description",
+    "isActive": "Active"
+  },
+  "warehouses": {
+    "title": "Warehouses",
+    "create": "Add Warehouse",
+    "edit": "Edit Warehouse",
+    "list": "Warehouse List",
+    "name": "Warehouse Name",
+    "code": "Warehouse Code",
+    "address": "Address",
+    "manager": "Manager",
+    "isDefault": "Default",
+    "isActive": "Active"
+  },
+  "stock": {
+    "title": "Stock",
+    "currentStock": "Current Stock",
+    "availableStock": "Available Stock",
+    "reservedStock": "Reserved Stock",
+    "incomingStock": "Incoming Stock",
+    "value": "Stock Value",
+    "valuationMethod": "Valuation Method",
+    "fifo": "First In First Out (FIFO)",
+    "lifo": "Last In First Out (LIFO)",
+    "average": "Weighted Average",
+    "standard": "Standard Cost"
+  },
+  "movements": {
+    "title": "Stock Movements",
+    "list": "Movement List",
+    "type": "Movement Type",
+    "date": "Date",
+    "product": "Product",
+    "warehouse": "Warehouse",
+    "quantity": "Quantity",
+    "unitCost": "Unit Cost",
+    "totalCost": "Total Cost",
+    "reference": "Reference",
+    "types": {
+      "in": "In",
+      "out": "Out",
+      "transfer": "Transfer",
+      "adjustment": "Adjustment",
+      "return": "Return",
+      "opening": "Opening Balance"
+    }
+  },
+  "adjustments": {
+    "title": "Stock Adjustments",
+    "create": "Create Adjustment",
+    "edit": "Edit Adjustment",
+    "list": "Adjustment List",
+    "reason": "Reason",
+    "items": "Items",
+    "statuses": {
+      "draft": "Draft",
+      "posted": "Posted",
+      "approved": "Approved"
+    }
+  },
+  "transfers": {
+    "title": "Stock Transfers",
+    "create": "Create Transfer",
+    "edit": "Edit Transfer",
+    "list": "Transfer List",
+    "fromWarehouse": "From Warehouse",
+    "toWarehouse": "To Warehouse",
+    "status": "Status",
+    "items": "Items",
+    "statuses": {
+      "pending": "Pending",
+      "inTransit": "In Transit",
+      "received": "Received",
+      "cancelled": "Cancelled"
+    }
+  },
+  "reorder": {
+    "title": "Reorder Points",
+    "product": "Product",
+    "warehouse": "Warehouse",
+    "reorderPoint": "Reorder Point",
+    "reorderQty": "Reorder Quantity",
+    "currentStock": "Current Stock",
+    "status": "Status",
+    "statuses": {
+      "ok": "OK",
+      "low": "Low",
+      "critical": "Critical",
+      "outOfStock": "Out of Stock"
+    }
+  },
+  "reports": {
+    "title": "Inventory Reports",
+    "stockReport": "Stock Report",
+    "valuationReport": "Stock Valuation Report",
+    "movementReport": "Movement Report",
+    "agingReport": "Stock Aging Report",
+    "reorderReport": "Reorder Report"
+  }
+}

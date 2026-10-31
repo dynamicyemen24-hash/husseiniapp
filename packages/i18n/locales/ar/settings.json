@@ -1,0 +1,211 @@
+{
+  "overview": {
+    "title": "الإعدادات",
+    "subtitle": "تكوين النظام والمستخدمين والوحدات والتكاملات"
+  },
+  "general": {
+    "title": "إعدادات عامة",
+    "companyName": "اسم الشركة",
+    "companyNameEn": "اسم الشركة بالإنجليزية",
+    "tagline": "الشعار",
+    "address": "العنوان",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "website": "الموقع الإلكتروني",
+    "taxNumber": "الرقم الضريبي",
+    "commercialRegister": "السجل التجاري",
+    "logo": "الشعار",
+    "favicon": "أيقونة المتصفح",
+    "defaultCurrency": "العملة الافتراضية",
+    "defaultLanguage": "اللغة الافتراضية",
+    "timezone": "المنطقة الزمنية",
+    "dateFormat": "تنسيق التاريخ",
+    "numberFormat": "تنسيق الأرقام",
+    "weekStart": "بداية الأسبوع",
+    "fiscalYearStart": "بداية السنة المالية"
+  },
+  "company": {
+    "title": "معلومات الشركة",
+    "branches": "الفروع",
+    "createBranch": "إضافة فرع",
+    "editBranch": "تعديل الفرع",
+    "branchName": "اسم الفرع",
+    "branchCode": "كود الفرع",
+    "address": "العنوان",
+    "manager": "مدير الفرع",
+    "isMain": "الفرع الرئيسي",
+    "isActive": "نشط"
+  },
+  "users": {
+    "title": "المستخدمون",
+    "create": "إضافة مستخدم",
+    "edit": "تعديل المستخدم",
+    "list": "قائمة المستخدمين",
+    "username": "اسم المستخدم",
+    "email": "البريد الإلكتروني",
+    "fullName": "الاسم الكامل",
+    "phone": "الهاتف",
+    "role": "الدور",
+    "roles": "الأدوار",
+    "permissions": "الصلاحيات",
+    "status": "الحالة",
+    "statuses": {
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "locked": "مقفل",
+      "pending": "معلق"
+    },
+    "lastLogin": "آخر دخول",
+    "twoFactor": "المصادقة الثنائية",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "sendInvite": "إرسال دعوة"
+  },
+  "roles": {
+    "title": "الأدوار",
+    "create": "إضافة دور",
+    "edit": "تعديل الدور",
+    "list": "قائمة الأدوار",
+    "name": "اسم الدور",
+    "description": "الوصف",
+    "permissions": "الصلاحيات",
+    "isSystem": "نظامي",
+    "userCount": "عدد المستخدمين"
+  },
+  "permissions": {
+    "title": "الصلاحيات",
+    "modules": "الوحدات",
+    "actions": "الإجراءات",
+    "resources": "الموارد",
+    "create": "إنشاء",
+    "read": "قراءة",
+    "update": "تعديل",
+    "delete": "حذف",
+    "approve": "اعتماد",
+    "export": "تصدير",
+    "import": "استيراد",
+    "print": "طباعة"
+  },
+  "modules": {
+    "title": "الوحدات",
+    "list": "قائمة الوحدات",
+    "name": "اسم الوحدة",
+    "description": "الوصف",
+    "isEnabled": "مفعلة",
+    "isInstalled": "مثبتة",
+    "version": "الإصدار",
+    "dependencies": "التبعيات"
+  },
+  "integrations": {
+    "title": "التكاملات",
+    "list": "قائمة التكاملات",
+    "name": "اسم التكامل",
+    "type": "النوع",
+    "types": {
+      "api": "API",
+      "webhook": "Webhook",
+      "oauth": "OAuth",
+      "sftp": "SFTP",
+      "email": "بريد إلكتروني",
+      "sms": "رسائل نصية"
+    },
+    "config": "التكوين",
+    "status": "الحالة",
+    "statuses": {
+      "connected": "متصل",
+      "disconnected": "منقطع",
+      "error": "خطأ",
+      "pending": "قيد الإعداد"
+    },
+    "testConnection": "اختبار الاتصال",
+    "syncNow": "مزامنة الآن"
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "channels": "قنوات الإشعارات",
+    "email": "البريد الإلكتروني",
+    "sms": "الرسائل النصية",
+    "push": "الإشعارات الفورية",
+    "inApp": "داخل التطبيق",
+    "templates": "القوالب",
+    "createTemplate": "إنشاء قالب",
+    "editTemplate": "تعديل القالب",
+    "events": "الأحداث",
+    "preferences": "التفضيلات"
+  },
+  "backup": {
+    "title": "النسخ الاحتياطي",
+    "create": "إنشاء نسخة احتياطية",
+    "list": "قائمة النسخ الاحتياطية",
+    "schedule": "جدولة النسخ الاحتياطي",
+    "frequency": "التكرار",
+    "frequencies": {
+      "daily": "يومي",
+      "weekly": "أسبوعي",
+      "monthly": "شهري"
+    },
+    "retention": "فترة الاحتفاظ",
+    "includeFiles": "تضمين الملفات",
+    "encrypt": "تشفير",
+    "lastBackup": "آخر نسخة احتياطية",
+    "nextBackup": "النسخة القادمة",
+    "restore": "استعادة",
+    "download": "تنزيل"
+  },
+  "audit": {
+    "title": "سجل التدقيق",
+    "list": "سجلات التدقيق",
+    "date": "التاريخ",
+    "user": "المستخدم",
+    "action": "الإجراء",
+    "entity": "الكيان",
+    "entityId": "معرف الكيان",
+    "changes": "التغييرات",
+    "ipAddress": "عنوان IP",
+    "userAgent": "معلومات المتصفح",
+    "filter": "تصفية",
+    "export": "تصدير"
+  },
+  "customization": {
+    "title": "التخصيص",
+    "theme": "السمة",
+    "themes": {
+      "light": "فاتح",
+      "dark": "داكن",
+      "system": "النظام"
+    },
+    "primaryColor": "اللون الأساسي",
+    "font": "الخط",
+    "density": "الكثافة",
+    "animations": "الرسوم المتحركة",
+    "compactMode": "الوضع المضغوط",
+    "sidebarPosition": "موضع الشريط الجانبي",
+    "language": "اللغة",
+    "rtl": "دعم RTL"
+  },
+  "security": {
+    "title": "الأمان",
+    "passwordPolicy": "سياسة كلمة المرور",
+    "minLength": "الحد الأدنى للطول",
+    "requireUppercase": "يتطلب حروف كبيرة",
+    "requireLowercase": "يتطلب حروف صغيرة",
+    "requireNumbers": "يتطلب أرقام",
+    "requireSymbols": "يتطلب رموز",
+    "expiryDays": "أيام انتهاء الصلاحية",
+    "historyCount": "تاريخ كلمات المرور",
+    "lockoutAttempts": "محاولات القفل",
+    "lockoutDuration": "مدة القفل",
+    "sessionTimeout": "مهلة الجلسة",
+    "maxConcurrentSessions": "أقصى جلسات متزامنة",
+    "ipWhitelist": "قائمة IP المسموحة",
+    "auditLogRetention": "احتفاظ سجل التدقيق"
+  },
+  "localization": {
+    "title": "التعريب والمحلية",
+    "languages": "اللغات",
+    "currencies": "العملات",
+    "dateFormats": "تنسيقات التاريخ",
+    "numberFormats": "تنسيقات الأرقام",
+    "timeZones": "المناطق الزمنية",
+    "units": "وحدات القياس"
+  }
+}

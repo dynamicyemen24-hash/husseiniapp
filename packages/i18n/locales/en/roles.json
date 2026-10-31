@@ -1,0 +1,69 @@
+{
+  "overview": {
+    "title": "Roles",
+    "subtitle": "Manage roles and permissions"
+  },
+  "general": {
+    "title": "Roles",
+    "list": "Role List",
+    "create": "Add Role",
+    "edit": "Edit Role",
+    "view": "View Role",
+    "delete": "Delete Role",
+    "duplicate": "Duplicate Role",
+    "name": "Role Name",
+    "code": "Role Code",
+    "description": "Description",
+    "permissions": "Permissions",
+    "isSystem": "System Role",
+    "isActive": "Active",
+    "userCount": "User Count",
+    "createdAt": "Created At",
+    "updatedAt": "Updated At"
+  },
+  "systemRoles": {
+    "superAdmin": "Super Admin",
+    "admin": "Admin",
+    "manager": "Manager",
+    "accountant": "Accountant",
+    "salesManager": "Sales Manager",
+    "salesRep": "Sales Representative",
+    "inventoryManager": "Inventory Manager",
+    "storekeeper": "Storekeeper",
+    "hrManager": "HR Manager",
+    "hrOfficer": "HR Officer",
+    "procurementManager": "Procurement Manager",
+    "procurementOfficer": "Procurement Officer",
+    "cashier": "Cashier",
+    "viewer": "Viewer",
+    "auditor": "Auditor"
+  },
+  "permissions": {
+    "title": "Role Permissions",
+    "modules": "Modules",
+    "actions": "Actions",
+    "grantAll": "Grant All",
+    "revokeAll": "Revoke All",
+    "expandAll": "Expand All",
+    "collapseAll": "Collapse All",
+    "search": "Search Permissions"
+  },
+  "assignment": {
+    "title": "Role Assignment",
+    "assignRole": "Assign Role",
+    "removeRole": "Remove Role",
+    "user": "User",
+    "roles": "Roles",
+    "effectiveFrom": "Effective From",
+    "effectiveTo": "Effective To",
+    "assignedBy": "Assigned By",
+    "assignedAt": "Assigned At"
+  },
+  "hierarchy": {
+    "title": "Role Hierarchy",
+    "parentRole": "Parent Role",
+    "childRoles": "Child Roles",
+    "inheritsFrom": "Inherits From",
+    "inheritsPermissions": "Inherits Permissions"
+  }
+}

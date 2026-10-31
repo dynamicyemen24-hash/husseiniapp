@@ -1,0 +1,145 @@
+{
+  "overview": {
+    "title": "المخزون",
+    "subtitle": "إدارة المنتجات والمستودعات وحركات المخزون"
+  },
+  "products": {
+    "title": "المنتجات",
+    "create": "إضافة منتج",
+    "edit": "تعديل المنتج",
+    "view": "عرض المنتج",
+    "list": "قائمة المنتجات",
+    "name": "اسم المنتج",
+    "code": "كود المنتج",
+    "barcode": "الباركود",
+    "description": "الوصف",
+    "category": "التصنيف",
+    "brand": "العلامة التجارية",
+    "unit": "الوحدة الأساسية",
+    "units": "الوحدات",
+    "costPrice": "سعر التكلفة",
+    "salePrice": "سعر البيع",
+    "minPrice": "الحد الأدنى للسعر",
+    "maxPrice": "الحد الأقصى للسعر",
+    "trackStock": "تتبع المخزون",
+    "trackSerial": "تتبع الرقم التسلسلي",
+    "trackBatch": "تتبع الدفعة",
+    "expiryDate": "تاريخ الانتهاء",
+    "reorderPoint": "نقطة إعادة الطلب",
+    "maxStock": "الحد الأقصى للمخزون",
+    "weight": "الوزن",
+    "dimensions": "الأبعاد",
+    "image": "الصورة",
+    "isActive": "نشط",
+    "isService": "خدمة",
+    "variants": "المتغيرات",
+    "attributes": "السمات"
+  },
+  "categories": {
+    "title": "التصنيفات",
+    "create": "إضافة تصنيف",
+    "edit": "تعديل التصنيف",
+    "list": "قائمة التصنيفات",
+    "name": "اسم التصنيف",
+    "parent": "التصنيف الأب",
+    "description": "الوصف",
+    "isActive": "نشط"
+  },
+  "warehouses": {
+    "title": "المستودعات",
+    "create": "إضافة مستودع",
+    "edit": "تعديل المستودع",
+    "list": "قائمة المستودعات",
+    "name": "اسم المستودع",
+    "code": "كود المستودع",
+    "address": "العنوان",
+    "manager": "المسؤول",
+    "isDefault": "افتراضي",
+    "isActive": "نشط"
+  },
+  "stock": {
+    "title": "المخزون",
+    "currentStock": "المخزون الحالي",
+    "availableStock": "المخزون المتاح",
+    "reservedStock": "المخزون المحجوز",
+    "incomingStock": "المخزون الوارد",
+    "value": "قيمة المخزون",
+    "valuationMethod": "طريقة التقييم",
+    "fifo": "الأول دخولاً أول خروجاً (FIFO)",
+    "lifo": "الآخر دخولاً أول خروجاً (LIFO)",
+    "average": "المتوسط المرجح",
+    "standard": "التكلفة القياسية"
+  },
+  "movements": {
+    "title": "حركات المخزون",
+    "list": "قائمة الحركات",
+    "type": "نوع الحركة",
+    "date": "التاريخ",
+    "product": "المنتج",
+    "warehouse": "المستودع",
+    "quantity": "الكمية",
+    "unitCost": "تكلفة الوحدة",
+    "totalCost": "التكلفة الإجمالية",
+    "reference": "المرجع",
+    "types": {
+      "in": "دخول",
+      "out": "خروج",
+      "transfer": "تحويل",
+      "adjustment": "تسوية",
+      "return": "مرتجع",
+      "opening": "رصيد افتتاحي"
+    }
+  },
+  "adjustments": {
+    "title": "تسويات المخزون",
+    "create": "إنشاء تسوية",
+    "edit": "تعديل التسوية",
+    "list": "قائمة التسويات",
+    "reason": "السبب",
+    "items": "البنود",
+    "statuses": {
+      "draft": "مسودة",
+      "posted": "مرحلة",
+      "approved": "معتمدة"
+    }
+  },
+  "transfers": {
+    "title": "تحويلات المخزون",
+    "create": "إنشاء تحويل",
+    "edit": "تعديل التحويل",
+    "list": "قائمة التحويلات",
+    "fromWarehouse": "من المستودع",
+    "toWarehouse": "إلى المستودع",
+    "status": "الحالة",
+    "items": "البنود",
+    "statuses": {
+      "pending": "معلقة",
+      "inTransit": "قيد النقل",
+      "received": "مستلمة",
+      "cancelled": "ملغية"
+    }
+  },
+  "reorder": {
+    "title": "نقاط إعادة الطلب",
+    "product": "المنتج",
+    "warehouse": "المستودع",
+    "reorderPoint": "نقطة إعادة الطلب",
+    "reorderQty": "كمية إعادة الطلب",
+    "currentStock": "المخزون الحالي",
+    "status": "الحالة",
+    "statuses": {
+      "ok": "ممتاز",
+      "low": "منخفض",
+      "critical": "حرج",
+      "outOfStock": "نفد المخزون"
+    }
+  },
+  "reports": {
+    "title": "تقارير المخزون",
+    "stockReport": "تقرير المخزون",
+    "valuationReport": "تقرير تقييم المخزون",
+    "movementReport": "تقرير الحركات",
+    "agingReport": "تقرير تقادم المخزون",
+    "reorderReport": "تقرير إعادة الطلب"
+  }
+}

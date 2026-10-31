@@ -1,0 +1,44 @@
+{
+  "name": "@alhusseiniya/i18n",
+  "version": "1.0.0",
+  "description": "Internationalization utilities for AlHusainia platform",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.d.ts",
+    "./locales": "./dist/locales.d.ts",
+    "./client": "./dist/client.d.ts",
+    "./server": "./dist/server.d.ts"
+  },
+  "scripts": {
+    "build": "tsc && node scripts/extract-messages.js",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "extract": "node scripts/extract-messages.js",
+    "compile": "node scripts/compile-messages.js"
+  },
+  "dependencies": {
+    "i18next": "^23.10.0",
+    "i18next-fs-backend": "^2.3.1",
+    "i18next-http-backend": "^2.5.0",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "react-i18next": "^14.1.0",
+    "@formatjs/intl": "^2.10.0",
+    "@formatjs/icu-messageformat-parser": "^2.7.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@alhusseiniya/eslint-config": "workspace:*",
+    "@types/node": "^20.12.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0",
+    "glob": "^10.3.10"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@alhusseiniya/dr-validation",
+  "version": "1.0.0",
+  "description": "RTO/RPO disaster recovery validation tests",
+  "type": "module",
+  "main": "rto-rpo-validation.ts",
+  "scripts": {
+    "validate": "tsx rto-rpo-validation.ts",
+    "validate:rto": "tsx rto-rpo-validation.ts --rpo-only",
+    "validate:rpo": "tsx rto-rpo-validation.ts --rto-only",
+    "validate:ci": "tsx rto-rpo-validation.ts"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.0",
+    "tsx": "^4.19.0"
+  }
+}

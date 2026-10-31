@@ -1,0 +1,94 @@
+{
+  "flags": {
+    "new-dashboard-ui": {
+      "key": "new-dashboard-ui",
+      "description": "Enables the redesigned dashboard with new widgets",
+      "defaultValue": false,
+      "enabled": true,
+      "targeting": [
+        { "percentage": 10, "environments": ["production"] },
+        { "percentage": 100, "environments": ["staging"] }
+      ],
+      "owner": "frontend-team",
+      "tags": ["ui", "dashboard"]
+    },
+    "advanced-reporting": {
+      "key": "advanced-reporting",
+      "description": "Enables advanced reporting module with custom queries",
+      "defaultValue": false,
+      "enabled": true,
+      "targeting": [
+        { "roles": ["admin", "accountant"], "percentage": 100 },
+        { "tenantIds": [1, 5, 10], "percentage": 100 }
+      ],
+      "owner": "reporting-team",
+      "tags": ["reporting", "analytics"]
+    },
+    "ai-invoice-extraction": {
+      "key": "ai-invoice-extraction",
+      "description": "AI-powered invoice data extraction from PDFs",
+      "defaultValue": false,
+      "enabled": true,
+      "targeting": [
+        { "userIds": ["beta-user-1", "beta-user-2"] },
+        { "percentage": 5, "environments": ["production"] }
+      ],
+      "owner": "ai-team",
+      "tags": ["ai", "invoice", "beta"]
+    },
+    "realtime-notifications": {
+      "key": "realtime-notifications",
+      "description": "WebSocket-based real-time notifications",
+      "defaultValue": true,
+      "enabled": true,
+      "targeting": [
+        { "percentage": 100 }
+      ],
+      "owner": "platform-team",
+      "tags": ["notifications", "realtime"]
+    },
+    "dark-mode-default": {
+      "key": "dark-mode-default",
+      "description": "Sets dark mode as default for new users",
+      "defaultValue": true,
+      "enabled": true,
+      "owner": "design-team",
+      "tags": ["ui", "theme"]
+    },
+    "maintenance-mode": {
+      "key": "maintenance-mode",
+      "description": "Global maintenance mode - disables all write operations",
+      "defaultValue": false,
+      "enabled": false,
+      "targeting": [],
+      "owner": "devops",
+      "tags": ["ops", "maintenance"]
+    },
+    "new-pricing-engine": {
+      "key": "new-pricing-engine",
+      "description": "New pricing calculation engine with tiered discounts",
+      "defaultValue": false,
+      "enabled": true,
+      "targeting": [
+        { "percentage": 25, "environments": ["production"] },
+        { "percentage": 100, "environments": ["staging"] }
+      ],
+      "owner": "pricing-team",
+      "tags": ["pricing", "engine"]
+    }
+  },
+  "environments": {
+    "development": {
+      "overrides": {
+        "new-dashboard-ui": { "defaultValue": true },
+        "ai-invoice-extraction": { "defaultValue": true },
+        "advanced-reporting": { "defaultValue": true }
+      }
+    },
+    "staging": {
+      "overrides": {
+        "maintenance-mode": { "enabled": true }
+      }
+    }
+  }
+}

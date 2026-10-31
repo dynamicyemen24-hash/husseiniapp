@@ -1,0 +1,17 @@
+{
+  "name": "@alhusseiniya/security-scripts",
+  "version": "1.0.0",
+  "description": "Security and penetration testing scripts",
+  "type": "module",
+  "main": "penetration-test.ts",
+  "scripts": {
+    "penetration-test": "tsx penetration-test.ts",
+    "penetration-test:baseline": "tsx penetration-test.ts --baseline",
+    "penetration-test:full": "tsx penetration-test.ts --max-duration 60",
+    "penetration-test:ci": "tsx penetration-test.ts --baseline --fail-on high"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.0",
+    "tsx": "^4.19.0"
+  }
+}
